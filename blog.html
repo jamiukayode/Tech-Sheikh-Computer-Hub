@@ -1,0 +1,322 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Blog | Tech Tips & Business Advice - Tech Sheikh Hub</title>
+    <meta name="description"
+        content="Expert tech tips, laptop buying guides, business automation advice, and career insights from Tech Sheikh Hub. Learn how to grow with technology.">
+    <meta name="keywords" content="tech blog, laptop buying guide, business automation, tech skills, Nigeria tech hub">
+
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700;800&display=swap" rel="stylesheet">
+
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+
+    <!-- CSS -->
+    <link rel="stylesheet" href="./css/blog.css">
+</head>
+
+<body>
+
+    <!-- HEADER -->
+    <header>
+        <nav>
+            <a href="index.html" class="logo">Tech Sheikh <span>Hub</span></a>
+            <div class="menu-toggle" id="mobile-menu-btn">
+                <i class="fas fa-bars"></i>
+            </div>
+            <ul class="nav-links" id="nav-links">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="product.html">Laptops</a></li>
+                <li><a href="courses.html">Academy</a></li>
+                <li><a href="services.html">IT Services</a></li>
+                <li><a href="blog.html" style="color: var(--primary); font-weight:700;">Blog</a></li>
+                <li><a href="contact.html" class="cta-btn-nav">Get In Touch</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+
+        <!-- HERO SECTION -->
+        <section class="page-hero">
+            <h1 class="fade-in">Tech Tips & Business Insights</h1>
+            <p class="fade-in" style="animation-delay: 0.2s;">
+                Practical advice to help you buy smarter, learn faster, and grow your business with technology.
+            </p>
+        </section>
+
+        <!-- BLOG SECTION -->
+        <section class="section-padding">
+            <div class="section-header animate-on-scroll">
+                <h2>Latest Articles</h2>
+                <p>Expert advice from the Tech Sheikh team.</p>
+            </div>
+
+            <!-- Search -->
+            <div class="search-container animate-on-scroll">
+                <input type="text" class="search-input" placeholder="Search articles..." id="searchInput">
+                <button class="search-btn"><i class="fas fa-search"></i></button>
+            </div>
+
+            <!-- Filters -->
+            <div class="filter-container animate-on-scroll">
+                <button class="filter-btn active" data-filter="all">All Posts</button>
+                <button class="filter-btn" data-filter="buying-guide">Buying Guides</button>
+                <button class="filter-btn" data-filter="tech-tips">Tech Tips</button>
+                <button class="filter-btn" data-filter="business">Business</button>
+                <button class="filter-btn" data-filter="career">Career</button>
+                <button class="filter-btn" data-filter="education">Education</button>
+            </div>
+
+            <!-- Blog Grid -->
+            <div class="blog-grid" id="blogGrid">
+
+                <!-- Post 1 -->
+                <article class="blog-card animate-on-scroll" data-category="buying-guide"
+                    data-title="how to choose laptop programming student developer">
+                    <div class="blog-image">
+                        <img src="https://images.unsplash.com/photo-1517694712202-14dd9538aa97?ixlib=rb-1.2.1&auto=format&fit=crop&w=800&q=80"
+                            alt="Laptop for programming">
+                        <span class="blog-category">Buying Guide</span>
+                    </div>
+                    <div class="blog-content">
+                        <div class="blog-meta">
+                            <span><i class="far fa-calendar"></i> April 15, 2026</span>
+                            <span><i class="far fa-clock"></i> 5 min read</span>
+                        </div>
+                        <h3 class="blog-title">How to Choose a Laptop for Programming in Nigeria</h3>
+                        <p class="blog-excerpt">Don't waste money on the wrong specs. Learn exactly what RAM, processor,
+                            and storage you need for web development, data science, or graphic design.</p>
+                        <div class="blog-footer">
+                            <a href="https://wa.me/2347032331829?text=I%20read%20your%20blog%20about%20programming%20laptops%20and%20I%20need%20advice"
+                                class="read-more">Read Article <i class="fas fa-arrow-right"></i></a>
+                            <span style="color: var(--grey); font-size: 0.9rem;"><i class="fas fa-user"></i>
+                                Admin</span>
+                        </div>
+                    </div>
+                </article>
+
+                <!-- Post 2 -->
+                <article class="blog-card animate-on-scroll" data-category="business"
+                    data-title="why business needs website 2026 growth">
+                    <div class="blog-image">
+                        <img src="https://images.unsplash.com/photo-1460925895917-afdab827c52f?ixlib=rb-1.2.1&auto=format&fit=crop&w=800&q=80"
+                            alt="Business website">
+                        <span class="blog-category">Business</span>
+                    </div>
+                    <div class="blog-content">
+                        <div class="blog-meta">
+                            <span><i class="far fa-calendar"></i> March 31, 2026</span>
+                            <span><i class="far fa-clock"></i> 4 min read</span>
+                        </div>
+                        <h3 class="blog-title">Why Your Business Will Die Without a Website in 2026</h3>
+                        <p class="blog-excerpt">78% of customers check online before buying. Here's why not having a
+                            website is costing you sales every single day, and how to fix it fast.</p>
+                        <div class="blog-footer">
+                            <a href="https://wa.me/2347032331829?text=I%20read%20your%20blog%20about%20business%20websites%20and%20I%20want%20to%20get%20one"
+                                class="read-more">Read Article <i class="fas fa-arrow-right"></i></a>
+                            <span style="color: var(--grey); font-size: 0.9rem;"><i class="fas fa-user"></i>
+                                Admin</span>
+                        </div>
+                    </div>
+                </article>
+
+                <!-- Post 3 -->
+                <article class="blog-card animate-on-scroll" data-category="tech-tips"
+                    data-title="spot fake laptop uk used original check">
+                    <div class="blog-image">
+                        <img src="https://images.unsplash.com/photo-1588872657578-7efd1f1555ed?ixlib=rb-1.2.1&auto=format&fit=crop&w=800&q=80"
+                            alt="Check laptop">
+                        <span class="blog-category">Tech Tips</span>
+                    </div>
+                    <div class="blog-content">
+                        <div class="blog-meta">
+                            <span><i class="far fa-calendar"></i> April 5, 2026</span>
+                            <span><i class="far fa-clock"></i> 6 min read</span>
+                        </div>
+                        <h3 class="blog-title">5 Ways to Spot a Fake Laptop Before You Buy</h3>
+                        <p class="blog-excerpt">Scammers are getting smarter. Use these simple checks to verify if that
+                            "UK-used" laptop is genuine or refurbished junk that will crash in 2 weeks.</p>
+                        <div class="blog-footer">
+                            <a href="product.html" class="read-more">Shop Verified Laptops <i
+                                    class="fas fa-arrow-right"></i></a>
+                            <span style="color: var(--grey); font-size: 0.9rem;"><i class="fas fa-user"></i>
+                                Admin</span>
+                        </div>
+                    </div>
+                </article>
+
+                <!-- Post 4 -->
+                <article class="blog-card animate-on-scroll" data-category="career"
+                    data-title="tech skills pay nigeria 2024 high income">
+                    <div class="blog-image">
+                        <img src="https://images.unsplash.com/photo-1522071820081-009f0129c71c?ixlib=rb-1.2.1&auto=format&fit=crop&w=800&q=80"
+                            alt="Tech career">
+                        <span class="blog-category">Career</span>
+                    </div>
+                    <div class="blog-content">
+                        <div class="blog-meta">
+                            <span><i class="far fa-calendar"></i> Feb 21, 2026</span>
+                            <span><i class="far fa-clock"></i> 7 min read</span>
+                        </div>
+                        <h3 class="blog-title">7 Tech Skills That Pay ₦200k+ Monthly in Nigeria</h3>
+                        <p class="blog-excerpt">Stop learning random things. These are the exact skills employers are
+                            begging for right now, with salary ranges and how long it takes to learn each one.</p>
+                        <div class="blog-footer">
+                            <a href="courses.html" class="read-more">View Courses <i class="fas fa-arrow-right"></i></a>
+                            <span style="color: var(--grey); font-size: 0.9rem;"><i class="fas fa-user"></i>
+                                Admin</span>
+                        </div>
+                    </div>
+                </article>
+
+                <!-- Post 5 -->
+                <article class="blog-card animate-on-scroll" data-category="education"
+                    data-title="nabteb registration 2024 guide steps">
+                    <div class="blog-image">
+                        <img src="https://images.unsplash.com/photo-1434030216411-0b793f4b4173?ixlib=rb-1.2.1&auto=format&fit=crop&w=800&q=80"
+                            alt="Education">
+                        <span class="blog-category">Education</span>
+                    </div>
+                    <div class="blog-content">
+                        <div class="blog-meta">
+                            <span><i class="far fa-calendar"></i> Jan 5, 2026</span>
+                            <span><i class="far fa-clock"></i> 4 min read</span>
+                        </div>
+                        <h3 class="blog-title">Complete NABTEB Registration Guide 2026</h3>
+                        <p class="blog-excerpt">Step-by-step process to register for NABTEB exams without mistakes.
+                            Includes deadlines, required documents, and common errors to avoid.</p>
+                        <div class="blog-footer">
+                            <a href="https://wa.me/2347032331829?text=I%20need%20help%20with%20NABTEB%20registration"
+                                class="read-more">Get Help <i class="fas fa-arrow-right"></i></a>
+                            <span style="color: var(--grey); font-size: 0.9rem;"><i class="fas fa-user"></i>
+                                Admin</span>
+                        </div>
+                    </div>
+                </article>
+
+                <!-- Post 6 -->
+                <article class="blog-card animate-on-scroll" data-category="business"
+                    data-title="social media business growth nigeria strategy">
+                    <div class="blog-image">
+                        <img src="https://images.unsplash.com/photo-1611162617474-5b21e879e113?ixlib=rb-1.2.1&auto=format&fit=crop&w=800&q=80"
+                            alt="Social media">
+                        <span class="blog-category">Business</span>
+                    </div>
+                    <div class="blog-content">
+                        <div class="blog-meta">
+                            <span><i class="far fa-calendar"></i> March, 19, 2026</span>
+                            <span><i class="far fa-clock"></i> 5 min read</span>
+                        </div>
+                        <h3 class="blog-title">How to Get Customers from Instagram Without Ads</h3>
+                        <p class="blog-excerpt">Organic strategies that actually work for Nigerian businesses. Learn
+                            content ideas, posting schedules, and how to convert followers to buyers.</p>
+                        <div class="blog-footer">
+                            <a href="services.html" class="read-more">Get Social Media Help <i
+                                    class="fas fa-arrow-right"></i></a>
+                            <span style="color: var(--grey); font-size: 0.9rem;"><i class="fas fa-user"></i>
+                                Admin</span>
+                        </div>
+                    </div>
+                </article>
+
+            </div>
+
+            <!-- Load More -->
+            <div style="text-align: center; margin-top: 3rem;">
+                <button class="btn btn-outline" id="loadMoreBtn">Load More Articles</button>
+            </div>
+        </section>
+
+        <!-- NEWSLETTER -->
+        <section class="section-padding newsletter-section">
+            <div class="newsletter-box animate-on-scroll">
+                <h2 style="color: var(--primary); margin-bottom: 0.5rem;">Get Tech Tips Weekly</h2>
+                <p style="color: var(--grey);">Join 2,000+ subscribers. No spam, just practical advice to help you save
+                    money and make smarter tech decisions.</p>
+                <form class="newsletter-form"
+                    onsubmit="event.preventDefault(); alert('Thank you for subscribing! We will send you weekly updates.');">
+                    <input type="email" placeholder="Enter your email address" required>
+                    <button type="submit" class="btn btn-primary">Subscribe</button>
+                </form>
+            </div>
+        </section>bb
+
+        <!-- FINAL CTA -->
+        <section class="section-padding cta-section">
+            <h2 class="animate-on-scroll">Need Personalized Advice?</h2>
+            <p class="animate-on-scroll" style="max-width: 600px; margin: 1rem auto 2rem;">
+                Reading is good, but talking to an expert is better. Chat with us for specific recommendations tailored
+                to your needs.
+            </p>
+            <div class="hero-buttons animate-on-scroll">
+                <a href="https://wa.me/2347032331829" class="btn btn-secondary"><i class="fab fa-whatsapp"></i> Chat on
+                    WhatsApp</a>
+                <a href="contact.html" class="btn btn-outline-white">Visit Our Shop</a>
+            </div>
+        </section>
+
+    </main>
+
+    <!-- FOOTER -->
+    <footer class="site-footer">
+        <div class="footer-grid">
+
+            <div class="footer-col">
+                <h3>Tech Sheikh Computer Hub</h3>
+                <p>We make technology simple for everyone. From buying the right laptop to learning high income skills
+                    and growing your business.</p>
+                <div class="social-links">
+                    <a href="#"><i class="fab fa-facebook"></i></a>
+                    <a href="#"><i class="fab fa-instagram"></i></a>
+                    <a href="#"><i class="fab fa-twitter"></i></a>
+                    <a href="#"><i class="fab fa-tiktok"></i></a>
+                </div>
+            </div>
+
+            <div class="footer-col">
+                <h4>Quick Links</h4>
+                <ul class="footer-links">
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="about.html">About Us</a></li>
+                    <li><a href="product.html">Laptops</a></li>
+                    <li><a href="courses.html">Academy</a></li>
+                    <li><a href="services.html">IT services</a></li>
+                    <li><a href="contact.html">Contact Us</a></li>
+                </ul>
+            </div>
+
+            <div class="footer-col">
+                <h4>Contact & Location</h4>
+                <ul class="footer-links">
+                    <li><i class="fas fa-map-marker-alt"></i> Shop 3, Beside College of Health Science,<br>Al-hikmah
+                        University, Ilorin, Kwara State,
+                        Nigeria</li>
+                    <li><i class="fas fa-phone"></i> +234 703 233 1829</li>
+                    <li><i class="fas fa-envelope"></i> techsheikh001@gmail.com</li>
+                    <li><i class="fas fa-clock"></i> Mon - Sat 9AM - 6PM</li>
+                </ul>
+            </div>
+
+        </div>
+
+        <div class="footer-bottom">
+            <p>&copy; <span id="year"></span> Tech Sheikh Computer Hub. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <!-- WhatsApp Float -->
+    <a href="https://wa.me/2347032331829" class="whatsapp-float" target="_blank">
+        <i class="fab fa-whatsapp"></i>
+    </a>
+
+    <!-- JavaScript -->
+    <script src="./JavaScript/blog.js"> </script>
+</body>
+
+</html>

@@ -1,0 +1,578 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tech Academy | Learn High-Income Skills - Tech Sheikh Computer Hub</title>
+    <meta name="description"
+        content="Learn Frontend, Backend, UI/UX, Data Science, Cyber Security, and more. Practical training with job placement support.">
+
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700;800&display=swap" rel="stylesheet">
+
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+
+    <!-- CSS -->
+    <link rel="stylesheet" href="./css/courses.css">
+
+</head>
+
+<body>
+
+    <!-- HEADER -->
+    <header>
+        <nav>
+            <a href="index.html" class="logo">Tech Sheikh <span>Hub</span></a>
+            <div class="menu-toggle" id="mobile-menu-btn">
+                <i class="fas fa-bars"></i>
+            </div>
+            <ul class="nav-links" id="nav-links">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="product.html">Laptops</a></li>
+                <li><a href="courses.html" style="color: var(--primary); font-weight:700;">Academy</a></li>
+                <li><a href="services.html">IT Services</a></li>
+                <li><a href="contact.html" class="cta-btn-nav">Contact Us</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+
+        <!-- HERO SECTION -->
+        <section class="page-hero">
+            <h1 class="fade-in">Transform Your Career in 90 Days</h1>
+            <p class="fade-in" style="animation-delay: 0.2s;">
+                Don't waste 4 years in university learning theory. Learn practical, high-income skills that employers
+                pay for immediately.
+            </p>
+            <div class="hero-buttons fade-in" style="animation-delay: 0.4s;">
+                <a href="#courses" class="btn btn-secondary">View All Courses</a>
+                <a href="https://wa.me/2347032331829?text=I%20want%20to%20enroll%20in%20a%20course"
+                    class="btn btn-outline-white"><i class="fab fa-whatsapp"></i> Enroll Now</a>
+            </div>
+        </section>
+
+        <!-- WHY LEARN WITH US -->
+        <section class="section-padding why-learn-section">
+            <div class="section-header animate-on-scroll">
+                <h2>Why Learn With Tech Sheikh?</h2>
+                <p>We don't just teach. We prepare you for real jobs.</p>
+            </div>
+
+            <div class="why-grid">
+                <div class="card why-card animate-on-scroll">
+                    <div class="why-icon"><i class="fas fa-laptop-code"></i></div>
+                    <h3>Project-Based Learning</h3>
+                    <p>No boring theory. You build real projects for your portfolio from day one.</p>
+                </div>
+
+                <div class="card why-card animate-on-scroll">
+                    <div class="why-icon"><i class="fas fa-users"></i></div>
+                    <h3>Small Class Sizes</h3>
+                    <p>Maximum 15 students per class. Get personalized attention and mentorship.</p>
+                </div>
+
+                <div class="card why-card animate-on-scroll">
+                    <div class="why-icon"><i class="fas fa-briefcase"></i></div>
+                    <h3>Job Placement Support</h3>
+                    <p>We connect you with companies hiring after graduation. CV review and interview prep included.</p>
+                </div>
+
+                <div class="card why-card animate-on-scroll">
+                    <div class="why-icon"><i class="fas fa-infinity"></i></div>
+                    <h3>Lifetime Access</h3>
+                    <p>Come back anytime to retake classes or get help with your freelance projects.</p>
+                </div>
+            </div>
+        </section>
+
+        <!-- COURSES SECTION -->
+        <section class="section-padding" id="courses">
+            <div class="section-header animate-on-scroll">
+                <h2>Our Course Catalog</h2>
+                <p>Choose a path. Change your life.</p>
+            </div>
+
+            <!-- Filters -->
+            <div class="filter-container animate-on-scroll">
+                <button class="filter-btn active" data-filter="all">All Courses</button>
+                <button class="filter-btn" data-filter="dev">Development</button>
+                <button class="filter-btn" data-filter="design">Design</button>
+                <button class="filter-btn" data-filter="data">Data & AI</button>
+                <button class="filter-btn" data-filter="security">Security</button>
+                <button class="filter-btn" data-filter="marketing">Marketing</button>
+                <button class="filter-btn" data-filter="academic">Academic</button>
+            </div>
+
+            <!-- Courses Grid -->
+            <div class="courses-grid">
+
+                <!-- 1. Frontend Development -->
+                <div class="course-card animate-on-scroll" data-category="dev">
+                    <div class="course-header">
+                        <div class="course-category">Web Development</div>
+                        <div class="course-title">Frontend Development</div>
+                        <i class="fab fa-react course-icon"></i>
+                    </div>
+                    <div class="course-body">
+                        <p class="course-description">Master HTML, CSS, JavaScript, and React. Build responsive websites
+                            and web applications that users love.</p>
+                        <div class="course-meta">
+                            <span><i class="far fa-clock"></i> 12 Weeks</span>
+                            <span><i class="fas fa-signal"></i> Beginner</span>
+                        </div>
+                        <div class="course-skills">
+                            <span class="skill-tag">HTML/CSS</span>
+                            <span class="skill-tag">JavaScript</span>
+                            <span class="skill-tag">Bootstrap</span>
+                            <span class="skill-tag">React</span>
+                            <span class="skill-tag">Git</span>
+                            <span class="skill-tag">GitHub</span>
+                            <span class="skill-tag">Hosting</span>
+                        </div>
+                        <div class="course-price">₦120,000 <span>(Registration fee: ₦5,000)</span></div>
+                    </div>
+                    <div class="course-footer">
+                        <button class="btn btn-primary" style="width: 100%;"
+                            onclick="enrollCourse('Frontend Development')">Secure My Spot</button>
+                    </div>
+                </div>
+
+                <!-- 2. Backend Development -->
+                <div class="course-card animate-on-scroll" data-category="dev">
+                    <div class="course-header" style="background: #2d3748;">
+                        <div class="course-category">Web Development</div>
+                        <div class="course-title">Backend Development</div>
+                        <i class="fas fa-server course-icon"></i>
+                    </div>
+                    <div class="course-body">
+                        <p class="course-description">Learn server-side programming with Python/Django, and
+                            database management. Build APIs and scalable systems.</p>
+                        <div class="course-meta">
+                            <span><i class="far fa-clock"></i> 14 Weeks</span>
+                            <span><i class="fas fa-signal"></i> Intermediate</span>
+                        </div>
+                        <div class="course-skills">
+                            <span class="skill-tag">Python</span>
+                            <span class="skill-tag">Django</span>
+                            <span class="skill-tag">SQL</span>
+                            <span class="skill-tag">APIs</span>
+                        </div>
+                        <div class="course-price">₦150,000 <span>(Registration fee: ₦5,000)</span></div>
+                    </div>
+                    <div class="course-footer">
+                        <button class="btn btn-primary" style="width: 100%;"
+                            onclick="enrollCourse('Backend Development')">Secure My Spot</button>
+                    </div>
+                </div>
+
+                <!-- 3. UI/UX Design -->
+                <div class="course-card animate-on-scroll" data-category="design">
+                    <div class="course-header" style="background: #805ad5;">
+                        <div class="course-category">Design</div>
+                        <div class="course-title">UI/UX Design</div>
+                        <i class="fas fa-paint-brush course-icon"></i>
+                    </div>
+                    <div class="course-body">
+                        <p class="course-description">Design beautiful interfaces and user experiences using Figma.
+                            Learn design systems, prototyping, and user research.</p>
+                        <div class="course-meta">
+                            <span><i class="far fa-clock"></i> 8 Weeks</span>
+                            <span><i class="fas fa-signal"></i> Beginner</span>
+                        </div>
+                        <div class="course-skills">
+                            <span class="skill-tag">Figma</span>
+                            <span class="skill-tag">Prototyping</span>
+                            <span class="skill-tag">User Research</span>
+                            <span class="skill-tag">Design Systems</span>
+                        </div>
+                        <div class="course-price">₦80,000 <span>(Registration: ₦5,000)</span></div>
+                    </div>
+                    <div class="course-footer">
+                        <button class="btn btn-primary" style="width: 100%;"
+                            onclick="enrollCourse('UI/UX Design')">Secure My Spot</button>
+                    </div>
+                </div>
+
+                <!-- 4. Cyber Security -->
+                <div class="course-card animate-on-scroll" data-category="security">
+                    <div class="course-header" style="background: #c53030;">
+                        <div class="course-category">Security</div>
+                        <div class="course-title">Cyber Security</div>
+                        <i class="fas fa-shield-alt course-icon"></i>
+                    </div>
+                    <div class="course-body">
+                        <p class="course-description">Learn ethical hacking, network security, and how to protect
+                            systems from cyber attacks. High-demand skill globally.</p>
+                        <div class="course-meta">
+                            <span><i class="far fa-clock"></i> 16 Weeks</span>
+                            <span><i class="fas fa-signal"></i> Intermediate</span>
+                        </div>
+                        <div class="course-skills">
+                            <span class="skill-tag">Ethical Hacking</span>
+                            <span class="skill-tag">Network Security</span>
+                            <span class="skill-tag">Kali Linux</span>
+                            <span class="skill-tag">Penetration Testing</span>
+                        </div>
+                        <div class="course-price">₦180,000 <span>(Registration: ₦10,000)</span></div>
+                    </div>
+                    <div class="course-footer">
+                        <button class="btn btn-primary" style="width: 100%;"
+                            onclick="enrollCourse('Cyber Security')">Secure My Spot</button>
+                    </div>
+                </div>
+
+                <!-- 5. Data Analysis -->
+                <div class="course-card animate-on-scroll" data-category="data">
+                    <div class="course-header" style="background: #0987a0;">
+                        <div class="course-category">Data</div>
+                        <div class="course-title">Data Analysis</div>
+                        <i class="fas fa-chart-line course-icon"></i>
+                    </div>
+                    <div class="course-body">
+                        <p class="course-description">Master Excel, SQL, and Power BI. Learn to analyze data, create
+                            dashboards, and make business decisions with data.</p>
+                        <div class="course-meta">
+                            <span><i class="far fa-clock"></i> 8 Weeks</span>
+                            <span><i class="fas fa-signal"></i> Beginner</span>
+                        </div>
+                        <div class="course-skills">
+                            <span class="skill-tag">Excel</span>
+                            <span class="skill-tag">Python</span>
+                            <span class="skill-tag">SQL</span>
+                            <span class="skill-tag">Power BI</span>
+                            <span class="skill-tag">Statistics</span>
+                        </div>
+                        <div class="course-price">₦100,000 <span>(Registration: ₦10,000)</span></div>
+                    </div>
+                    <div class="course-footer">
+                        <button class="btn btn-primary" style="width: 100%;"
+                            onclick="enrollCourse('Data Analysis')">Secure My Spot</button>
+                    </div>
+                </div>
+
+                <!-- 6. Data Science -->
+                <div class="course-card animate-on-scroll" data-category="data">
+                    <div class="course-header" style="background: #2c5282;">
+                        <div class="course-category">Data</div>
+                        <div class="course-title">Data Science</div>
+                        <i class="fas fa-brain course-icon"></i>
+                    </div>
+                    <div class="course-body">
+                        <p class="course-description">Advanced course covering Python for data science, machine learning
+                            algorithms, and AI fundamentals.</p>
+                        <div class="course-meta">
+                            <span><i class="far fa-clock"></i> 20 Weeks</span>
+                            <span><i class="fas fa-signal"></i> Advanced</span>
+                        </div>
+                        <div class="course-skills">
+                            <span class="skill-tag">Python</span>
+                            <span class="skill-tag">Machine Learning</span>
+                            <span class="skill-tag">Pandas</span>
+                            <span class="skill-tag">TensorFlow</span>
+                        </div>
+                        <div class="course-price">₦250,000 <span>(Registration: ₦20,000)</span></div>
+                    </div>
+                    <div class="course-footer">
+                        <button class="btn btn-primary" style="width: 100%;"
+                            onclick="enrollCourse('Data Science')">Secure My Spot</button>
+                    </div>
+                </div>
+
+                <!-- 7. Social Media Management -->
+                <div class="course-card animate-on-scroll" data-category="marketing">
+                    <div class="course-header" style="background: #d69e2e;">
+                        <div class="course-category">Marketing</div>
+                        <div class="course-title">Social Media Management</div>
+                        <i class="fas fa-share-alt course-icon"></i>
+                    </div>
+                    <div class="course-body">
+                        <p class="course-description">Learn to grow brands on Instagram, Facebook, and TikTok. Content
+                            strategy, ads management, and analytics.</p>
+                        <div class="course-meta">
+                            <span><i class="far fa-clock"></i> 6 Weeks</span>
+                            <span><i class="fas fa-signal"></i> Beginner</span>
+                        </div>
+                        <div class="course-skills">
+                            <span class="skill-tag">Content Strategy</span>
+                            <span class="skill-tag">Meta Ads</span>
+                            <span class="skill-tag">Analytics</span>
+                            <span class="skill-tag">Canva</span>
+                        </div>
+                        <div class="course-price">₦50,000 <span>(Registration: ₦5,000)</span></div>
+                    </div>
+                    <div class="course-footer">
+                        <button class="btn btn-primary" style="width: 100%;"
+                            onclick="enrollCourse('Social Media Management')">Secure My Spot</button>
+                    </div>
+                </div>
+
+                <!-- 8. Prompt Engineering -->
+                <div class="course-card animate-on-scroll" data-category="dev">
+                    <div class="course-header" style="background: #553c9a;">
+                        <div class="course-category">AI & Tech</div>
+                        <div class="course-title">Prompt Engineering</div>
+                        <i class="fas fa-robot course-icon"></i>
+                    </div>
+                    <div class="course-body">
+                        <p class="course-description">Master AI tools like ChatGPT and Midjourney. Learn to write
+                            effective prompts for business automation and content creation.</p>
+                        <div class="course-meta">
+                            <span><i class="far fa-clock"></i> 4 Weeks</span>
+                            <span><i class="fas fa-signal"></i> Beginner</span>
+                        </div>
+                        <div class="course-skills">
+                            <span class="skill-tag">ChatGPT</span>
+                            <span class="skill-tag">Midjourney</span>
+                            <span class="skill-tag">AI Automation</span>
+                            <span class="skill-tag">Prompt Design</span>
+                        </div>
+                        <div class="course-price">₦30,000 <span>(Registration: ₦5,000)</span></div>
+                    </div>
+                    <div class="course-footer">
+                        <button class="btn btn-primary" style="width: 100%;"
+                            onclick="enrollCourse('Prompt Engineering')">Secure My Spot</button>
+                    </div>
+                </div>
+
+                <!-- 9. Graphics Design -->
+                <div class="course-card animate-on-scroll" data-category="design">
+                    <div class="course-header" style="background: #dd6b20;">
+                        <div class="course-category">Design</div>
+                        <div class="course-title">Graphics Design</div>
+                        <i class="fas fa-palette course-icon"></i>
+                    </div>
+                    <div class="course-body">
+                        <p class="course-description">Learn Canva and Postermywall. Create logos, flyers,
+                            social media graphics, and branding materials.</p>
+                        <div class="course-meta">
+                            <span><i class="far fa-clock"></i> 8 Weeks</span>
+                            <span><i class="fas fa-signal"></i> Beginner</span>
+                        </div>
+                        <div class="course-skills">
+                            <span class="skill-tag">Canva</span>
+                            <span class="skill-tag">Postermywall</span>
+                            <span class="skill-tag">Branding</span>
+                        </div>
+                        <div class="course-price">₦40,000 <span>(Registration: ₦10,000)</span></div>
+                    </div>
+                    <div class="course-footer">
+                        <button class="btn btn-primary" style="width: 100%;"
+                            onclick="enrollCourse('Graphics Design')">Secure My Spot</button>
+                    </div>
+                </div>
+
+                <!-- 10. Academic Project Research -->
+                <div class="course-card animate-on-scroll" data-category="academic">
+                    <div class="course-header" style="background: #276749;">
+                        <div class="course-category">Academic Support</div>
+                        <div class="course-title">Academic Project Research</div>
+                        <i class="fas fa-graduation-cap course-icon"></i>
+                    </div>
+                    <div class="course-body">
+                        <p class="course-description">Get expert guidance on your final year project, thesis writing,
+                            research methodology, and data analysis for students.</p>
+                        <div class="course-meta">
+                            <span><i class="far fa-clock"></i> Flexible</span>
+                            <span><i class="fas fa-signal"></i> All Levels</span>
+                        </div>
+                        <div class="course-skills">
+                            <span class="skill-tag">Research Methods</span>
+                            <span class="skill-tag">Data Analysis</span>
+                            <span class="skill-tag">Thesis Writing</span>
+                            <span class="skill-tag">Project Documentation</span>
+                        </div>
+                        <div class="course-price">₦50,000+ <span>(Depends on the Project)</span></div>
+                    </div>
+                    <div class="course-footer">
+                        <button class="btn btn-primary" style="width: 100%;"
+                            onclick="enrollCourse('Academic Project Research')">Get Help Now</button>
+                    </div>
+                </div>
+
+                <!-- 11. Computer Training (Basic) -->
+                <div class="course-card animate-on-scroll" data-category="academic">
+                    <div class="course-header" style="background: #718096;">
+                        <div class="course-category">Beginner</div>
+                        <div class="course-title">Computer Basics</div>
+                        <i class="fas fa-desktop course-icon"></i>
+                    </div>
+                    <div class="course-body">
+                        <p class="course-description">Perfect for beginners. Learn Windows, Microsoft Office (Word,
+                            Excel, PowerPoint), internet browsing, and email.</p>
+                        <div class="course-meta">
+                            <span><i class="far fa-clock"></i> 4 Weeks</span>
+                            <span><i class="fas fa-signal"></i> Beginner</span>
+                        </div>
+                        <div class="course-skills">
+                            <span class="skill-tag">Windows</span>
+                            <span class="skill-tag">MS Word</span>
+                            <span class="skill-tag">MS Excel</span>
+                            <span class="skill-tag">Internet Basics</span>
+                        </div>
+                        <div class="course-price">₦30,000 <span>(Registration: ₦5,000)</span></div>
+                    </div>
+                    <div class="course-footer">
+                        <button class="btn btn-primary" style="width: 100%;"
+                            onclick="enrollCourse('Computer Basics')">Secure My Spot</button>
+                    </div>
+                </div>
+
+            </div>
+        </section>
+
+        <!-- SUCCESS STORIES -->
+        <section class="section-padding success-section">
+            <div class="section-header animate-on-scroll">
+                <h2>Student Success Stories</h2>
+                <p>Real results from real students who trusted us.</p>
+            </div>
+
+            <div class="testimonial-grid">
+                <div class="testimonial-card animate-on-scroll">
+                    <div class="stars">
+                        <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i
+                            class="fas fa-star"></i><i class="fas fa-star"></i>
+                    </div>
+                    <p class="testimonial-text">"I finished the Frontend Development course in 3 months. 2 weeks later,
+                        I got my first job as a Junior Developer at a tech company in Lagos. Best investment ever."</p>
+                    <div class="testimonial-author">Abdulhakeem</div>
+                    <div class="testimonial-role">Frontend Developer, TechCity NG</div>
+                </div>
+
+                <div class="testimonial-card animate-on-scroll">
+                    <div class="stars">
+                        <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i
+                            class="fas fa-star"></i><i class="fas fa-star"></i>
+                    </div>
+                    <p class="testimonial-text">"The Data Analysis course changed my career. I moved from being a
+                        teacher to a Data Analyst at a bank. The practical projects in the course were exactly what I
+                        needed."</p>
+                    <div class="testimonial-author">Amina Bello</div>
+                    <div class="testimonial-role">Data Analyst, Union Bank</div>
+                </div>
+
+                <div class="testimonial-card animate-on-scroll">
+                    <div class="stars">
+                        <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i
+                            class="fas fa-star"></i><i class="fas fa-star"></i>
+                    </div>
+                    <p class="testimonial-text">"I run a small business. After the Social Media Management course, I
+                        started handling my own marketing and saved ₦50,000 monthly. The ROI was immediate."</p>
+                    <div class="testimonial-author">Tunde Adeyemi</div>
+                    <div class="testimonial-role">Business Owner</div>
+                </div>
+            </div>
+        </section>
+
+        <!-- ENROLLMENT PROCESS -->
+        <section class="section-padding process-section">
+            <div class="section-header animate-on-scroll">
+                <h2>How to Enroll</h2>
+                <p>Start your journey in 4 simple steps.</p>
+            </div>
+
+            <div class="process-grid">
+                <div class="process-step animate-on-scroll">
+                    <div class="step-number">1</div>
+                    <h3>Choose Course</h3>
+                    <p>Browse our catalog and pick a skill that matches your goals.</p>
+                </div>
+                <div class="process-step animate-on-scroll">
+                    <div class="step-number">2</div>
+                    <h3>Pay Registration</h3>
+                    <p>Secure your spot with a small registration fee via bank transfer or cash.</p>
+                </div>
+                <div class="process-step animate-on-scroll">
+                    <div class="step-number">3</div>
+                    <h3>Start Learning</h3>
+                    <p>Attend classes (physical or online) with your laptop and enthusiasm.</p>
+                </div>
+                <div class="process-step animate-on-scroll">
+                    <div class="step-number">4</div>
+                    <h3>Get Certified</h3>
+                    <p>Complete your projects, get your certificate, and access job support.</p>
+                </div>
+            </div>
+        </section>
+
+        <!-- FINAL CTA -->
+        <section class="section-padding cta-section">
+            <h2 class="animate-on-scroll">Your Future Starts Here</h2>
+            <p class="animate-on-scroll" style="max-width: 600px; margin: 1rem auto 2rem;">
+                Every month you delay is money you're not earning. Our next batch starts soon. Secure your spot now.
+            </p>
+            <div class="hero-buttons animate-on-scroll">
+                <a href="https://wa.me/2347032331829?text=I%20want%20to%20enroll%20in%20a%20course%20at%20Tech%20Sheikh%20Academy"
+                    class="btn btn-secondary"><i class="fab fa-whatsapp"></i> Enroll via WhatsApp</a>
+                <a href="tel:+2347032331829" class="btn btn-outline-white"><i class="fas fa-phone"></i> Call to
+                    Register</a>
+            </div>
+            <p class="animate-on-scroll" style="margin-top: 2rem; font-size: 0.9rem; opacity: 0.8;">
+                <i class="fas fa-users"></i> Limited seats available per batch | <i class="fas fa-percentage"></i> Early
+                bird discounts available
+            </p>
+        </section>
+
+    </main>
+
+    <!-- FOOTER -->
+    <footer class="site-footer">
+        <div class="footer-grid">
+
+            <div class="footer-col">
+                <h3>Tech Sheikh Computer Hub</h3>
+                <p>We make technology simple for everyone. From buying the right laptop to learning high income skills
+                    and growing your business.</p>
+                <div class="social-links">
+                    <a href="#"><i class="fab fa-facebook"></i></a>
+                    <a href="#"><i class="fab fa-instagram"></i></a>
+                    <a href="#"><i class="fab fa-twitter"></i></a>
+                    <a href="#"><i class="fab fa-tiktok"></i></a>
+                </div>
+            </div>
+
+            <div class="footer-col">
+                <h4>Quick Links</h4>
+                <ul class="footer-links">
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="about.html">About Us</a></li>
+                    <li><a href="product.html">Laptops</a></li>
+                    <li><a href="courses.html">Academy</a></li>
+                    <li><a href="services.html">Services</a></li>
+                    <li><a href="contact.html">Contact Us</a></li>
+                </ul>
+            </div>
+
+            <div class="footer-col">
+                <h4>Contact & Location</h4>
+                <ul class="footer-links">
+                    <li><i class="fas fa-map-marker-alt"></i> Shop 3, Beside College of Health Science,<br>Al-hikmah
+                        University, Ilorin, Kwara State,
+                        Nigeri</li>
+                    <li><i class="fas fa-phone"></i> +234 703 233 1829</li>
+                    <li><i class="fas fa-envelope"></i> techsheikh001@gmail.com</li>
+                    <li><i class="fas fa-clock"></i> Mon - Sat 9AM - 6PM</li>
+                </ul>
+            </div>
+
+        </div>
+
+        <div class="footer-bottom">
+            <p>&copy; <span id="year"></span> Tech Sheikh Computer Hub. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <!-- WhatsApp Float -->
+    <a href="https://wa.me/2347032331829" class="whatsapp-float" target="_blank">
+        <i class="fab fa-whatsapp"></i>
+    </a>
+
+    <!-- JavaScript -->
+    <script src="./JavaScript/courses.js"></script>
+</body>
+
+</html>

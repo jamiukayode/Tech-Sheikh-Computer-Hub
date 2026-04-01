@@ -1,0 +1,789 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>How to Choose a Laptop for Programming in Nigeria | Tech Sheikh Hub</title>
+    <meta name="description" content="Don't waste money on wrong specs. Learn exactly what RAM, processor, and storage you need for web development, data science, or graphic design in Nigeria.">
+    <meta name="keywords" content="laptop for programming, coding laptop nigeria, developer laptop specs, web development laptop">
+    
+    <!-- Open Graph for Social Sharing -->
+    <meta property="og:title" content="How to Choose a Laptop for Programming in Nigeria">
+    <meta property="og:description" content="Expert guide to buying the right laptop for coding. Avoid costly mistakes.">
+    <meta property="og:image" content="https://images.unsplash.com/photo-1517694712202-14dd9538aa97?ixlib=rb-1.2.1&auto=format&fit=crop&w=800&q=80">
+    <meta property="og:type" content="article">
+
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700;800&display=swap" rel="stylesheet">
+    
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+
+    <style>
+        /* =========================================
+           GLOBAL DESIGN SYSTEM
+           ========================================= */
+        :root {
+            --primary: #0044CC;
+            --primary-dark: #003399;
+            --secondary: #FF9900;
+            --secondary-hover: #e68900;
+            --dark: #1a1a1a;
+            --light-bg: #f4f7f6;
+            --white: #ffffff;
+            --grey: #777;
+            --grey-light: #e2e8f0;
+            --shadow: 0 4px 15px rgba(0, 0, 0, 0.08);
+            --shadow-lg: 0 10px 30px rgba(0, 0, 0, 0.15);
+        }
+
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: 'Inter', sans-serif;
+            scroll-behavior: smooth;
+        }
+
+        body {
+            color: var(--dark);
+            background-color: var(--white);
+            line-height: 1.7;
+            overflow-x: hidden;
+        }
+
+        a { text-decoration: none; color: inherit; }
+        ul { list-style: none; }
+        img { max-width: 100%; height: auto; display: block; }
+
+        .btn {
+            display: inline-block;
+            padding: 0.8rem 1.8rem;
+            border-radius: 5px;
+            font-weight: 700;
+            cursor: pointer;
+            transition: all 0.3s ease;
+            border: none;
+            text-align: center;
+        }
+        .btn-primary { background: var(--primary); color: var(--white); }
+        .btn-primary:hover { background: var(--primary-dark); transform: translateY(-3px); box-shadow: var(--shadow); }
+        
+        .btn-secondary { background: var(--secondary); color: var(--white); }
+        .btn-secondary:hover { background: var(--secondary-hover); transform: translateY(-3px); box-shadow: var(--shadow); }
+        
+        .btn-outline { border: 2px solid var(--primary); color: var(--primary); background: transparent; }
+        .btn-outline:hover { background: var(--primary); color: var(--white); transform: translateY(-3px); }
+
+        /* HEADER */
+        header {
+            background: var(--white);
+            box-shadow: var(--shadow);
+            position: sticky;
+            top: 0;
+            z-index: 1000;
+        }
+        nav {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 1rem 5%;
+        }
+        .logo {
+            font-size: 1.5rem;
+            font-weight: 700;
+            color: var(--primary);
+        }
+        .logo span { color: var(--secondary); }
+        .nav-links {
+            display: flex;
+            gap: 2rem;
+            align-items: center;
+        }
+        .nav-links a {
+            color: var(--dark);
+            font-weight: 600;
+            transition: 0.3s;
+        }
+        .nav-links a:hover { color: var(--primary); }
+        .cta-btn-nav {
+            background: var(--primary);
+            color: white !important;
+            padding: 0.5rem 1.2rem;
+            border-radius: 5px;
+        }
+        .menu-toggle {
+            display: none;
+            font-size: 1.5rem;
+            cursor: pointer;
+            color: var(--primary);
+        }
+
+        /* FOOTER */
+        footer {
+            background: var(--dark);
+            color: white;
+            padding: 4rem 5% 2rem;
+        }
+        .footer-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 3rem;
+            margin-bottom: 3rem;
+            text-align: left;
+        }
+        .footer-col h3, .footer-col h4 {
+            color: var(--secondary);
+            margin-bottom: 1.5rem;
+        }
+        .footer-col p { color: #cbd5e1; line-height: 1.8; }
+        .footer-links li { margin-bottom: 0.8rem; }
+        .footer-links a { color: #cbd5e1; transition: 0.3s; }
+        .footer-links a:hover { color: var(--secondary); padding-left: 5px; }
+        .footer-bottom {
+            border-top: 1px solid #333;
+            padding-top: 2rem;
+            text-align: center;
+            color: #94a3b8;
+        }
+        .social-links {
+            display: flex;
+            gap: 1rem;
+            margin-top: 1rem;
+        }
+        .social-links a {
+            color: white;
+            font-size: 1.5rem;
+            transition: 0.3s;
+        }
+        .social-links a:hover { color: var(--secondary); }
+
+        .whatsapp-float {
+            position: fixed;
+            bottom: 30px;
+            right: 30px;
+            background-color: #25d366;
+            color: white;
+            width: 60px;
+            height: 60px;
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 30px;
+            box-shadow: 2px 5px 15px rgba(0, 0, 0, 0.3);
+            z-index: 1000;
+            transition: 0.3s;
+        }
+        .whatsapp-float:hover { transform: scale(1.1); }
+
+        /* BLOG DETAIL PAGE SPECIFIC */
+        
+        /* Breadcrumb */
+        .breadcrumb {
+            background: var(--light-bg);
+            padding: 1rem 5%;
+            font-size: 0.9rem;
+            color: var(--grey);
+        }
+        .breadcrumb a {
+            color: var(--primary);
+        }
+        .breadcrumb a:hover {
+            text-decoration: underline;
+        }
+
+        /* Article Header */
+        .article-header {
+            max-width: 800px;
+            margin: 0 auto;
+            padding: 3rem 5% 2rem;
+            text-align: center;
+        }
+        .article-category {
+            display: inline-block;
+            background: var(--secondary);
+            color: white;
+            padding: 0.3rem 1rem;
+            border-radius: 20px;
+            font-size: 0.8rem;
+            font-weight: 700;
+            text-transform: uppercase;
+            margin-bottom: 1rem;
+        }
+        .article-title {
+            font-size: 2.5rem;
+            color: var(--dark);
+            margin-bottom: 1.5rem;
+            line-height: 1.2;
+            font-weight: 800;
+        }
+        .article-meta {
+            display: flex;
+            justify-content: center;
+            gap: 2rem;
+            color: var(--grey);
+            font-size: 0.95rem;
+            flex-wrap: wrap;
+        }
+        .article-meta span {
+            display: flex;
+            align-items: center;
+            gap: 0.5rem;
+        }
+
+        /* Featured Image */
+        .featured-image {
+            width: 100%;
+            max-height: 500px;
+            object-fit: cover;
+            margin-bottom: 3rem;
+        }
+
+        /* Content Layout */
+        .content-wrapper {
+            display: grid;
+            grid-template-columns: 1fr 350px;
+            gap: 3rem;
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 0 5% 5rem;
+        }
+
+        /* Main Article Content */
+        .article-content {
+            font-size: 1.1rem;
+            color: var(--dark);
+        }
+        .article-content h2 {
+            font-size: 1.8rem;
+            color: var(--primary);
+            margin: 2.5rem 0 1rem;
+            font-weight: 700;
+        }
+        .article-content h3 {
+            font-size: 1.4rem;
+            color: var(--dark);
+            margin: 2rem 0 0.8rem;
+            font-weight: 600;
+        }
+        .article-content p {
+            margin-bottom: 1.5rem;
+        }
+        .article-content ul, .article-content ol {
+            margin-bottom: 1.5rem;
+            padding-left: 2rem;
+        }
+        .article-content ul li, .article-content ol li {
+            margin-bottom: 0.5rem;
+            list-style-type: disc;
+        }
+        .article-content strong {
+            color: var(--primary);
+            font-weight: 700;
+        }
+        .article-content a {
+            color: var(--primary);
+            text-decoration: underline;
+            text-underline-offset: 3px;
+        }
+
+        /* Inline CTA Box (Contextual) */
+        .inline-cta {
+            background: linear-gradient(135deg, var(--primary), var(--primary-dark));
+            color: white;
+            padding: 2rem;
+            border-radius: 10px;
+            margin: 2.5rem 0;
+            text-align: center;
+            box-shadow: var(--shadow-lg);
+        }
+        .inline-cta h3 {
+            color: white !important;
+            font-size: 1.5rem;
+            margin-bottom: 0.5rem;
+        }
+        .inline-cta p {
+            color: rgba(255,255,255,0.9);
+            margin-bottom: 1.5rem;
+        }
+        .inline-cta .btn-secondary {
+            background: var(--secondary);
+            color: white;
+        }
+
+        /* Product Recommendation Box */
+        .product-rec-box {
+            background: var(--light-bg);
+            border: 2px solid var(--secondary);
+            border-radius: 10px;
+            padding: 1.5rem;
+            margin: 2.5rem 0;
+            display: flex;
+            gap: 1.5rem;
+            align-items: center;
+            flex-wrap: wrap;
+        }
+        .product-rec-image {
+            width: 150px;
+            height: 150px;
+            object-fit: cover;
+            border-radius: 8px;
+        }
+        .product-rec-content {
+            flex: 1;
+        }
+        .product-rec-content h4 {
+            color: var(--primary);
+            margin-bottom: 0.5rem;
+        }
+        .product-rec-content .price {
+            font-size: 1.5rem;
+            color: var(--secondary);
+            font-weight: 800;
+            margin-bottom: 1rem;
+        }
+
+        /* Sidebar */
+        .sidebar {
+            position: sticky;
+            top: 100px;
+            height: fit-content;
+        }
+        .sidebar-widget {
+            background: var(--white);
+            border-radius: 10px;
+            padding: 1.5rem;
+            margin-bottom: 2rem;
+            box-shadow: var(--shadow);
+            border: 1px solid var(--grey-light);
+        }
+        .sidebar-widget h3 {
+            color: var(--primary);
+            margin-bottom: 1rem;
+            font-size: 1.2rem;
+            padding-bottom: 0.5rem;
+            border-bottom: 2px solid var(--secondary);
+        }
+
+        /* Sticky CTA Widget */
+        .sticky-cta {
+            background: var(--white);
+            border-radius: 10px;
+            padding: 1.5rem;
+            box-shadow: var(--shadow-lg);
+            border: 2px solid var(--primary);
+            text-align: center;
+            position: sticky;
+            top: 100px;
+        }
+        .sticky-cta-icon {
+            font-size: 2.5rem;
+            color: var(--secondary);
+            margin-bottom: 1rem;
+        }
+        .sticky-cta h3 {
+            color: var(--dark);
+            margin-bottom: 0.5rem;
+            font-size: 1.3rem;
+        }
+        .sticky-cta p {
+            color: var(--grey);
+            font-size: 0.95rem;
+            margin-bottom: 1.5rem;
+        }
+        .sticky-cta .btn {
+            width: 100%;
+            margin-bottom: 0.5rem;
+        }
+
+        /* Related Posts */
+        .related-posts {
+            background: var(--light-bg);
+            padding: 4rem 5%;
+        }
+        .related-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 2rem;
+            max-width: 1000px;
+            margin: 0 auto;
+        }
+        .related-card {
+            background: var(--white);
+            border-radius: 10px;
+            overflow: hidden;
+            box-shadow: var(--shadow);
+            transition: 0.3s;
+        }
+        .related-card:hover {
+            transform: translateY(-5px);
+        }
+        .related-card img {
+            width: 100%;
+            height: 180px;
+            object-fit: cover;
+        }
+        .related-content {
+            padding: 1.5rem;
+        }
+        .related-content h4 {
+            color: var(--dark);
+            margin-bottom: 0.5rem;
+        }
+
+        /* Share Buttons */
+        .share-section {
+            margin-top: 3rem;
+            padding-top: 2rem;
+            border-top: 1px solid var(--grey-light);
+        }
+        .share-buttons {
+            display: flex;
+            gap: 1rem;
+            margin-top: 1rem;
+        }
+        .share-btn {
+            width: 40px;
+            height: 40px;
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            color: white;
+            transition: 0.3s;
+        }
+        .share-btn:hover { transform: scale(1.1); }
+        .share-btn.facebook { background: #3b5998; }
+        .share-btn.twitter { background: #1da1f2; }
+        .share-btn.whatsapp { background: #25d366; }
+        .share-btn.linkedin { background: #0077b5; }
+
+        /* Responsive */
+        @media (max-width: 968px) {
+            .content-wrapper {
+                grid-template-columns: 1fr;
+            }
+            .sidebar {
+                position: relative;
+                top: 0;
+                order: 2;
+            }
+            .article-title {
+                font-size: 2rem;
+            }
+        }
+        @media (max-width: 768px) {
+            .menu-toggle { display: block; }
+            .nav-links {
+                display: none;
+                position: absolute;
+                top: 100%;
+                left: 0;
+                width: 100%;
+                background: var(--white);
+                flex-direction: column;
+                padding: 2rem;
+                box-shadow: var(--shadow);
+                gap: 1.5rem;
+                text-align: center;
+            }
+            .nav-links.active { display: flex; }
+            .article-title { font-size: 1.8rem; }
+            .product-rec-box { flex-direction: column; text-align: center; }
+        }
+    </style>
+</head>
+
+<body>
+
+    <!-- HEADER -->
+    <header>
+        <nav>
+            <a href="index.html" class="logo">Tech Sheikh <span>Hub</span></a>
+            <div class="menu-toggle" id="mobile-menu-btn">
+                <i class="fas fa-bars"></i>
+            </div>
+            <ul class="nav-links" id="nav-links">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="products.html">Laptops</a></li>
+                <li><a href="courses.html">Academy</a></li>
+                <li><a href="services.html">Services</a></li>
+                <li><a href="blog.html">Blog</a></li>
+                <li><a href="contact.html" class="cta-btn-nav">Get In Touch</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <!-- BREADCRUMB -->
+    <div class="breadcrumb">
+        <a href="index.html">Home</a> / <a href="blog.html">Blog</a> / <span>How to Choose a Laptop for Programming</span>
+    </div>
+
+    <!-- ARTICLE HEADER -->
+    <header class="article-header">
+        <span class="article-category">Buying Guide</span>
+        <h1 class="article-title">How to Choose a Laptop for Programming in Nigeria (2024 Guide)</h1>
+        <div class="article-meta">
+            <span><i class="far fa-calendar"></i> January 15, 2024</span>
+            <span><i class="far fa-clock"></i> 8 min read</span>
+            <span><i class="far fa-user"></i> By Tech Sheikh</span>
+            <span><i class="far fa-eye"></i> 2,450 views</span>
+        </div>
+    </header>
+
+    <!-- FEATURED IMAGE -->
+    <img src="https://images.unsplash.com/photo-1517694712202-14dd9538aa97?ixlib=rb-1.2.1&auto=format&fit=crop&w=1200&q=80" alt="Laptop for programming" class="featured-image">
+
+    <!-- MAIN CONTENT -->
+    <div class="content-wrapper">
+        
+        <!-- ARTICLE CONTENT -->
+        <article class="article-content">
+            
+            <p><strong>Buying the wrong laptop for coding is the fastest way to waste ₦300,000.</strong> I've seen too many students buy "fancy" laptops that can't run Visual Studio Code properly, or developers struggling with 4GB RAM machines in 2024.</p>
+            
+            <p>In this guide, I'll show you exactly what specs you need based on what you're learning – whether it's web development, data science, or mobile app development.</p>
+
+            <!-- INLINE CTA: Contextual to the topic -->
+            <div class="inline-cta">
+                <h3>Don't Want to Research? We Did It For You</h3>
+                <p>We've curated the best laptops for programmers with the exact specs mentioned in this article. Tested and verified.</p>
+                <a href="products.html" class="btn btn-secondary">View Recommended Laptops</a>
+            </div>
+
+            <h2>1. The Golden Rule: Minimum Specs for Programming</h2>
+            
+            <p>Before we dive into specific types of development, here are the non-negotiable minimums for any serious programming work in 2024:</p>
+            
+            <ul>
+                <li><strong>RAM:</strong> 8GB minimum, 16GB recommended (Chrome alone eats 4GB)</li>
+                <li><strong>Storage:</strong> 256GB SSD minimum. HDDs are too slow for modern development.</li>
+                <li><strong>Processor:</strong> Intel Core i5 (8th gen+) or AMD Ryzen 5. Don't go below this.</li>
+                <li><strong>Screen:</strong> 14" minimum, Full HD (1920x1080). Your eyes will thank you.</li>
+            </ul>
+
+            <h2>2. Web Development (Frontend & Backend)</h2>
+            
+            <p>For HTML, CSS, JavaScript, React, Node.js, and Python web frameworks, you don't need a beast machine, but you need speed.</p>
+            
+            <h3>Recommended Specs:</h3>
+            <ul>
+                <li><strong>RAM:</strong> 8GB (sufficient) or 16GB (if you run Docker)</li>
+                <li><strong>CPU:</strong> Intel i5 or AMD Ryzen 5</li>
+                <li><strong>Storage:</strong> 256GB SSD</li>
+                <li><strong>OS:</strong> Windows 10/11 Pro or Linux (Ubuntu)</li>
+            </ul>
+
+            <!-- PRODUCT RECOMMENDATION: Contextual -->
+            <div class="product-rec-box">
+                <img src="https://images.unsplash.com/photo-1588872657578-7efd1f1555ed?ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=80" alt="HP EliteBook" class="product-rec-image">
+                <div class="product-rec-content">
+                    <h4>Our Top Pick for Web Developers</h4>
+                    <p>HP EliteBook 840 G5 - Intel i5, 8GB RAM, 256GB SSD</p>
+                    <div class="price">₦320,000</div>
+                    <button class="btn btn-primary" onclick="orderProduct('HP EliteBook 840 G5', '320,000')">Order This Laptop</button>
+                </div>
+            </div>
+
+            <h2>3. Data Science & Machine Learning</h2>
+            
+            <p>This is where things get expensive. Running Python, Pandas, and Jupyter Notebooks requires serious power.</p>
+            
+            <h3>Recommended Specs:</h3>
+            <ul>
+                <li><strong>RAM:</strong> 16GB minimum (32GB for large datasets)</li>
+                <li><strong>CPU:</strong> Intel i7 or AMD Ryzen 7 (multi-core processing)</li>
+                <li><strong>Storage:</strong> 512GB SSD minimum</li>
+                <li><strong>GPU:</strong> Dedicated NVIDIA card (if budget allows)</li>
+            </ul>
+
+            <h2>4. Mobile App Development (Android/iOS)</h2>
+            
+            <p>Android Studio is a resource hog. Don't even attempt it with less than 8GB RAM.</p>
+
+            <!-- INLINE CTA: Course Recommendation -->
+            <div class="inline-cta" style="background: linear-gradient(135deg, #2d3748, #1a202c);">
+                <h3>Want to Learn Programming?</h3>
+                <p>Join our 12-week Frontend Development course. Laptop guidance included, plus job placement support.</p>
+                <a href="courses.html" class="btn btn-secondary">View Course Details</a>
+            </div>
+
+            <h2>5. Where to Buy in Nigeria</h2>
+            
+            <p>Don't buy from random Instagram sellers. Here's why buying from a verified hub like ours protects you:</p>
+            
+            <ol>
+                <li><strong>Physical Testing:</strong> You can visit and test the laptop before paying</li>
+                <li><strong>Warranty:</strong> 3-month warranty on all devices (we fix or replace)</li>
+                <li><strong>Setup Support:</strong> We help you install IDEs, VS Code, and development environments</li>
+                <li><strong>Genuine Parts:</strong> No refurbished motherboards or fake batteries</li>
+            </ol>
+
+            <h2>Conclusion: Invest Wisely</h2>
+            
+            <p>Your laptop is your tool for making money. A ₦250,000 laptop that works perfectly is better than a ₦150,000 laptop that frustrates you daily.</p>
+            
+            <p><strong>Still confused about which laptop to buy?</strong> Message us on WhatsApp with your budget and what you want to learn. We'll recommend the perfect match within minutes.</p>
+
+            <!-- SHARE SECTION -->
+            <div class="share-section">
+                <h3>Share This Article</h3>
+                <div class="share-buttons">
+                    <a href="#" class="share-btn facebook"><i class="fab fa-facebook-f"></i></a>
+                    <a href="#" class="share-btn twitter"><i class="fab fa-twitter"></i></a>
+                    <a href="#" class="share-btn whatsapp"><i class="fab fa-whatsapp"></i></a>
+                    <a href="#" class="share-btn linkedin"><i class="fab fa-linkedin-in"></i></a>
+                </div>
+            </div>
+
+        </article>
+
+        <!-- SIDEBAR -->
+        <aside class="sidebar">
+            
+            <!-- Sticky CTA Widget -->
+            <div class="sticky-cta">
+                <div class="sticky-cta-icon"><i class="fas fa-laptop-code"></i></div>
+                <h3>Need a Coding Laptop?</h3>
+                <p>Get our curated selection of programmer-friendly laptops with 3-month warranty.</p>
+                <button class="btn btn-primary" onclick="window.location.href='products.html'">Browse Laptops</button>
+                <button class="btn btn-outline" onclick="window.open('https://wa.me/2348000000000?text=I%20read%20your%20programming%20laptop%20guide%20and%20need%20recommendations')">Chat for Advice</button>
+            </div>
+
+            <!-- Related Services -->
+            <div class="sidebar-widget">
+                <h3>Related Services</h3>
+                <ul style="list-style: none;">
+                    <li style="margin-bottom: 1rem;">
+                        <a href="courses.html" style="color: var(--dark); display: flex; align-items: center; gap: 0.5rem;">
+                            <i class="fas fa-graduation-cap" style="color: var(--secondary);"></i>
+                            <span>Web Development Course</span>
+                        </a>
+                    </li>
+                    <li style="margin-bottom: 1rem;">
+                        <a href="services.html" style="color: var(--dark); display: flex; align-items: center; gap: 0.5rem;">
+                            <i class="fas fa-tools" style="color: var(--secondary);"></i>
+                            <span>Laptop Setup & Installation</span>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="contact.html" style="color: var(--dark); display: flex; align-items: center; gap: 0.5rem;">
+                            <i class="fas fa-headset" style="color: var(--secondary);"></i>
+                            <span>1-on-1 Tech Consultation</span>
+                        </a>
+                    </li>
+                </ul>
+            </div>
+
+            <!-- Newsletter -->
+            <div class="sidebar-widget">
+                <h3>Get More Tips</h3>
+                <p style="font-size: 0.9rem; color: var(--grey); margin-bottom: 1rem;">Join 2,000+ developers getting weekly tech tips.</p>
+                <form onsubmit="event.preventDefault(); alert('Subscribed!');">
+                    <input type="email" placeholder="Your email" style="width: 100%; padding: 0.8rem; margin-bottom: 0.5rem; border: 1px solid var(--grey-light); border-radius: 5px;">
+                    <button type="submit" class="btn btn-primary" style="width: 100%;">Subscribe</button>
+                </form>
+            </div>
+
+        </aside>
+
+    </div>
+
+    <!-- RELATED POSTS -->
+    <section class="related-posts">
+        <div class="section-header">
+            <h2>Continue Reading</h2>
+            <p>More articles to help you make smart tech decisions.</p>
+        </div>
+        
+        <div class="related-grid">
+            <div class="related-card">
+                <img src="https://images.unsplash.com/photo-1460925895917-afdab827c52f?ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=80" alt="Business website">
+                <div class="related-content">
+                    <span style="color: var(--secondary); font-size: 0.8rem; font-weight: 700;">BUSINESS</span>
+                    <h4>Why Your Business Will Die Without a Website</h4>
+                    <a href="#" class="btn btn-outline" style="margin-top: 1rem; display: inline-block;">Read Article</a>
+                </div>
+            </div>
+            
+            <div class="related-card">
+                <img src="https://images.unsplash.com/photo-1522071820081-009f0129c71c?ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=80" alt="Coding">
+                <div class="related-content">
+                    <span style="color: var(--secondary); font-size: 0.8rem; font-weight: 700;">CAREER</span>
+                    <h4>7 Tech Skills That Pay ₦200k+ Monthly</h4>
+                    <a href="#" class="btn btn-outline" style="margin-top: 1rem; display: inline-block;">Read Article</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- FINAL CTA -->
+    <section style="background: var(--primary); color: white; padding: 3rem 5%; text-align: center;">
+        <h2>Ready to Start Coding?</h2>
+        <p style="max-width: 600px; margin: 1rem auto 2rem;">Get the right laptop + the right training. We offer both.</p>
+        <div style="display: flex; gap: 1rem; justify-content: center; flex-wrap: wrap;">
+            <a href="products.html" class="btn btn-secondary">Buy Laptop</a>
+            <a href="courses.html" class="btn btn-outline-white">Join Academy</a>
+        </div>
+    </section>
+
+    <!-- FOOTER -->
+    <footer class="site-footer">
+        <div class="footer-grid">
+            <div class="footer-col">
+                <h3>Tech Sheikh Hub</h3>
+                <p>We make technology simple for everyone. From buying the right laptop to learning high income skills.</p>
+                <div class="social-links">
+                    <a href="#"><i class="fab fa-facebook"></i></a>
+                    <a href="#"><i class="fab fa-instagram"></i></a>
+                    <a href="#"><i class="fab fa-twitter"></i></a>
+                </div>
+            </div>
+            <div class="footer-col">
+                <h4>Quick Links</h4>
+                <ul class="footer-links">
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="about.html">About</a></li>
+                    <li><a href="products.html">Laptops</a></li>
+                    <li><a href="courses.html">Academy</a></li>
+                    <li><a href="blog.html">Blog</a></li>
+                </ul>
+            </div>
+            <div class="footer-col">
+                <h4>Contact</h4>
+                <ul class="footer-links">
+                    <li><i class="fas fa-map-marker-alt"></i> Suite 4, Electronics Complex</li>
+                    <li><i class="fas fa-phone"></i> +234 800 000 0000</li>
+                    <li><i class="fas fa-envelope"></i> info@techsheikh.com</li>
+                </ul>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>&copy; <span id="year"></span> Tech Sheikh Computer Hub. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <!-- WhatsApp Float -->
+    <a href="https://wa.me/2348000000000" class="whatsapp-float" target="_blank">
+        <i class="fab fa-whatsapp"></i>
+    </a>
+
+    <script>
+        // Mobile Menu
+        document.getElementById('mobile-menu-btn').addEventListener('click', () => {
+            document.getElementById('nav-links').classList.toggle('active');
+        });
+
+        // Dynamic Year
+        document.getElementById('year').textContent = new Date().getFullYear();
+
+        // Order Function
+        function orderProduct(name, price) {
+            window.open(`https://wa.me/2348000000000?text=I want to order ${name} for ₦${price} (Read about it on your blog)`, '_blank');
+        }
+    </script>
+</body>
+</html>

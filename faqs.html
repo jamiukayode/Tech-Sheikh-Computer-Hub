@@ -1,0 +1,283 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FAQs | Tech Sheikh Computer Hub</title>
+
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700;800&display=swap" rel="stylesheet">
+
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+
+
+    <!-- CSS -->
+    <link rel="stylesheet" href="./css/faqs.css">
+
+</head>
+
+<body>
+
+    <!-- HEADER (Same as Homepage) -->
+    <header>
+        <nav>
+            <a href="index.html" class="logo">Tech Sheikh <span>Hub</span></a>
+            <div class="menu-toggle" id="mobile-menu-btn">
+                <i class="fas fa-bars"></i>
+            </div>
+            <ul class="nav-links" id="nav-links">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="product.html">Laptops</a></li>
+                <li><a href="courses.html">Academy</a></li>
+                <li><a href="services.html">IT Services</a></li>
+                <li><a href="contact.html" class="cta-btn-nav">Get In Touch</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+
+        <!-- HERO SECTION -->
+        <section class="page-hero">
+            <h1 class="fade-in">Frequently Asked Questions</h1>
+            <p class="fade-in" style="animation-delay: 0.2s;">
+                Quick answers to help you make the right decision faster.
+            </p>
+        </section>
+
+        <!-- FAQ SECTION WITH FILTERS -->
+        <section class="section-padding">
+            <div class="section-header animate-on-scroll">
+                <h2>How Can We Help You?</h2>
+                <p>Select a category to find answers specific to your needs.</p>
+            </div>
+
+            <!-- Filter Buttons -->
+            <div class="filter-container animate-on-scroll">
+                <button class="filter-btn active" data-filter="all">All Questions</button>
+                <button class="filter-btn" data-filter="laptops">Laptops</button>
+                <button class="filter-btn" data-filter="academy">Academy</button>
+                <button class="filter-btn" data-filter="services">Business Services</button>
+                <button class="filter-btn" data-filter="general">General</button>
+            </div>
+
+            <!-- FAQ Grid -->
+            <div class="faq-grid">
+
+                <!-- Laptop FAQs -->
+                <div class="faq-item animate-on-scroll" data-category="laptops">
+                    <div class="faq-question">
+                        <span>Do your laptops come with warranty?</span>
+                        <i class="fas fa-chevron-down"></i>
+                    </div>
+                    <div class="faq-answer">
+                        <span class="faq-category">Laptops</span>
+                        Yes! All our laptops come with a minimum 3-month warranty. We test every device thoroughly
+                        before sale so you can buy with confidence.
+                    </div>
+                </div>
+
+                <div class="faq-item animate-on-scroll" data-category="laptops">
+                    <div class="faq-question">
+                        <span>Can I inspect the laptop before paying?</span>
+                        <i class="fas fa-chevron-down"></i>
+                    </div>
+                    <div class="faq-answer">
+                        <span class="faq-category">Laptops</span>
+                        Absolutely. You are welcome to visit our shop, inspect the device, test the specs, and only pay
+                        when you are 100% satisfied.
+                    </div>
+                </div>
+
+                <div class="faq-item animate-on-scroll" data-category="laptops">
+                    <div class="faq-question">
+                        <span>Do you deliver outside the city?</span>
+                        <i class="fas fa-chevron-down"></i>
+                    </div>
+                    <div class="faq-answer">
+                        <span class="faq-category">Laptops</span>
+                        Yes, we deliver nationwide. Payment on delivery is available for certain locations. Contact us
+                        on WhatsApp for details.
+                    </div>
+                </div>
+
+                <!-- Academy FAQs -->
+                <div class="faq-item animate-on-scroll" data-category="academy">
+                    <div class="faq-question">
+                        <span>Do I need prior knowledge to join?</span>
+                        <i class="fas fa-chevron-down"></i>
+                    </div>
+                    <div class="faq-answer">
+                        <span class="faq-category">Academy</span>
+                        Not at all. Our courses are designed for beginners. We start from the basics and take you to
+                        professional level.
+                    </div>
+                </div>
+
+                <div class="faq-item animate-on-scroll" data-category="academy">
+                    <div class="faq-question">
+                        <span>Are the classes physical or online?</span>
+                        <i class="fas fa-chevron-down"></i>
+                    </div>
+                    <div class="faq-answer">
+                        <span class="faq-category">Academy</span>
+                        We offer both! You can join us physically at our hub or learn comfortably from home via our live
+                        online classes.
+                    </div>
+                </div>
+
+                <div class="faq-item animate-on-scroll" data-category="academy">
+                    <div class="faq-question">
+                        <span>Do you offer certification?</span>
+                        <i class="fas fa-chevron-down"></i>
+                    </div>
+                    <div class="faq-answer">
+                        <span class="faq-category">Academy</span>
+                        Yes, upon successful completion of your course and projects, you will receive a certificate of
+                        completion.
+                    </div>
+                </div>
+
+                <!-- Services FAQs -->
+                <div class="faq-item animate-on-scroll" data-category="services">
+                    <div class="faq-question">
+                        <span>How much does a website cost?</span>
+                        <i class="fas fa-chevron-down"></i>
+                    </div>
+                    <div class="faq-answer">
+                        <span class="faq-category">Services</span>
+                        It depends on your needs. A basic business site starts from ₦50,000. Contact us for a custom
+                        quote based on your features.
+                    </div>
+                </div>
+
+                <div class="faq-item animate-on-scroll" data-category="services">
+                    <div class="faq-question">
+                        <span>Do you handle IT support for offices?</span>
+                        <i class="fas fa-chevron-down"></i>
+                    </div>
+                    <div class="faq-answer">
+                        <span class="faq-category">Services</span>
+                        Yes, we offer monthly IT support packages for businesses. We handle repairs, networking, and
+                        software setup.
+                    </div>
+                </div>
+
+                <!-- General FAQs -->
+                <div class="faq-item animate-on-scroll" data-category="general">
+                    <div class="faq-question">
+                        <span>Where are you located?</span>
+                        <i class="fas fa-chevron-down"></i>
+                    </div>
+                    <div class="faq-answer">
+                        <span class="faq-category">General</span>
+                        We are located at Shop 3, Beside College of Health Science,<br>Al-hikmah University, Ilorin,
+                        Kwara State,
+                        Nigeria. Check our Contact page for the exact map
+                        location.
+                    </div>
+                </div>
+
+                <div class="faq-item animate-on-scroll" data-category="general">
+                    <div class="faq-question">
+                        <span>What are your opening hours?</span>
+                        <i class="fas fa-chevron-down"></i>
+                    </div>
+                    <div class="faq-answer">
+                        <span class="faq-category">General</span>
+                        We are open Monday to Saturday, 9:00 AM to 6:00 PM. Sundays are by appointment only.
+                    </div>
+                </div>
+
+            </div>
+        </section>
+
+        <!-- STILL HAVE QUESTIONS CTA -->
+        <section class="section-padding" style="background: var(--light-bg); text-align: center;">
+            <div class="animate-on-scroll">
+                <h2 style="color: var(--primary); margin-bottom: 1rem;">Still Have Questions?</h2>
+                <p style="color: var(--grey); max-width: 600px; margin: 0 auto 2rem;">
+                    Can't find what you're looking for? Our team is ready to help you personally via WhatsApp.
+                </p>
+                <a href="https://wa.me/2347032331829" class="btn btn-secondary"><i class="fab fa-whatsapp"></i> Chat
+                    With Us Now</a>
+            </div>
+        </section>
+
+        <!-- FINAL BUSINESS CTA -->
+        <section class="section-padding cta-section">
+            <h2 class="animate-on-scroll">Ready to Get Started?</h2>
+            <p class="animate-on-scroll" style="max-width: 600px; margin: 1rem auto 2rem;">
+                Don't let questions stop your progress. Choose your path below.
+            </p>
+            <div class="hero-buttons animate-on-scroll"
+                style="display: flex; gap: 1rem; justify-content: center; flex-wrap: wrap;">
+                <a href="product.html" class="btn btn-secondary">Buy Laptop</a>
+                <a href="courses.html" class="btn btn-outline-white">Join Academy</a>
+                <a href="contact.html" class="btn btn-secondary" style="background: white; color: var(--primary);">Get
+                    Business Support</a>
+            </div>
+        </section>
+
+    </main>
+
+    <!-- FOOTER (Same as Homepage) -->
+    <footer class="site-footer">
+        <div class="footer-grid">
+
+            <div class="footer-col">
+                <h3>Tech Sheikh Computer Hub</h3>
+                <p>We make technology simple for everyone. From buying the right laptop to learning high income skills
+                    and growing your business.</p>
+                <div class="social-links">
+                    <a href="#"><i class="fab fa-facebook"></i></a>
+                    <a href="#"><i class="fab fa-instagram"></i></a>
+                    <a href="#"><i class="fab fa-twitter"></i></a>
+                    <a href="#"><i class="fab fa-tiktok"></i></a>
+                </div>
+            </div>
+
+            <div class="footer-col">
+                <h4>Quick Links</h4>
+                <ul class="footer-links">
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="about.html">About Us</a></li>
+                    <li><a href="product.html">Laptops</a></li>
+                    <li><a href="courses.html">Academy</a></li>
+                    <li><a href="services.html">Services</a></li>
+                    <li><a href="contact.html">Contact Us</a></li>
+                </ul>
+            </div>
+
+            <div class="footer-col">
+                <h4>Contact & Location</h4>
+                <ul class="footer-links">
+                    <li><i class="fas fa-map-marker-alt"></i> Shop 3, Beside College of Health Science,<br>Al-hikmah
+                        University, Ilorin, Kwara State,
+                        Nigeria</li>
+                    <li><i class="fas fa-phone"></i> +234 703 233 1829</li>
+                    <li><i class="fas fa-envelope"></i> techsheikh001@gmail.com</li>
+                    <li><i class="fas fa-clock"></i> Mon - Sat 9AM - 6PM</li>
+                </ul>
+            </div>
+
+        </div>
+
+        <div class="footer-bottom">
+            <p>&copy; <span id="year"></span> Tech Sheikh Computer Hub. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <!-- WhatsApp Float -->
+    <a href="https://wa.me/2347032331829" class="whatsapp-float" target="_blank">
+        <i class="fab fa-whatsapp"></i>
+    </a>
+
+    <!-- JavaScript -->
+    <script src="./JavaScript/faqs.js"> </script>
+</body>
+
+</html>

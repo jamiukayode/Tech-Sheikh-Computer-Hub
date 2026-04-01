@@ -1,0 +1,520 @@
+  /* =========================================
+           1. GLOBAL DESIGN SYSTEM (BRAND COLORS)
+           ========================================= */
+  :root {
+      --primary: #0044CC;
+      /* Tech Blue */
+      --primary-dark: #003399;
+      --secondary: #FF9900;
+      /* Action Orange */
+      --secondary-hover: #e68900;
+      --dark: #1a1a1a;
+      --light-bg: #f4f7f6;
+      --white: #ffffff;
+      --grey: #777;
+      --grey-light: #e2e8f0;
+      --shadow: 0 4px 15px rgba(0, 0, 0, 0.08);
+      --shadow-lg: 0 10px 30px rgba(0, 0, 0, 0.15);
+  }
+
+  * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+      font-family: 'Inter', sans-serif;
+      scroll-behavior: smooth;
+  }
+
+  body {
+      color: var(--dark);
+      background-color: var(--white);
+      line-height: 1.6;
+      overflow-x: hidden;
+  }
+
+  a {
+      text-decoration: none;
+      color: inherit;
+  }
+
+  ul {
+      list-style: none;
+  }
+
+  img {
+      max-width: 100%;
+      height: auto;
+      display: block;
+  }
+
+  /* =========================================
+           2. UTILITIES & COMPONENTS
+           ========================================= */
+  .section-padding {
+      padding: 5rem 5%;
+  }
+
+  .section-header {
+      text-align: center;
+      margin-bottom: 3rem;
+  }
+
+  .section-header h2 {
+      font-size: 2.5rem;
+      color: var(--primary);
+      margin-bottom: 0.5rem;
+      font-weight: 800;
+  }
+
+  .section-header p {
+      color: var(--grey);
+      font-size: 1.1rem;
+      max-width: 700px;
+      margin: 0 auto;
+  }
+
+  .btn {
+      display: inline-block;
+      padding: 0.8rem 1.8rem;
+      border-radius: 5px;
+      font-weight: 700;
+      cursor: pointer;
+      transition: all 0.3s ease;
+      border: none;
+      text-align: center;
+  }
+
+  .btn-primary {
+      background: var(--primary);
+      color: var(--white);
+  }
+
+  .btn-primary:hover {
+      background: var(--primary-dark);
+      transform: translateY(-3px);
+      box-shadow: var(--shadow);
+  }
+
+  .btn-secondary {
+      background: var(--secondary);
+      color: var(--white);
+  }
+
+  .btn-secondary:hover {
+      background: var(--secondary-hover);
+      transform: translateY(-3px);
+      box-shadow: var(--shadow);
+  }
+
+  .btn-outline {
+      border: 2px solid var(--primary);
+      color: var(--primary);
+      background: transparent;
+  }
+
+  .btn-outline:hover {
+      background: var(--primary);
+      color: var(--white);
+      transform: translateY(-3px);
+  }
+
+  .btn-outline-white {
+      border: 2px solid var(--white);
+      color: var(--white);
+      background: transparent;
+  }
+
+  .btn-outline-white:hover {
+      background: var(--white);
+      color: var(--primary);
+      transform: translateY(-3px);
+  }
+
+  .card {
+      background: var(--white);
+      border-radius: 10px;
+      padding: 2rem;
+      box-shadow: var(--shadow);
+      border: 1px solid #eee;
+      transition: 0.3s;
+  }
+
+  .card:hover {
+      transform: translateY(-5px);
+      box-shadow: var(--shadow-lg);
+  }
+
+  /* =========================================
+           3. HEADER & NAVIGATION
+           ========================================= */
+  header {
+      background: var(--white);
+      box-shadow: var(--shadow);
+      position: sticky;
+      top: 0;
+      z-index: 1000;
+  }
+
+  nav {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding: 1rem 5%;
+  }
+
+  .logo {
+      font-size: 1.5rem;
+      font-weight: 700;
+      color: var(--primary);
+  }
+
+  .logo span {
+      color: var(--secondary);
+  }
+
+  .nav-links {
+      display: flex;
+      gap: 2rem;
+      align-items: center;
+  }
+
+  .nav-links a {
+      color: var(--dark);
+      font-weight: 600;
+      transition: 0.3s;
+  }
+
+  .nav-links a:hover {
+      color: var(--primary);
+  }
+
+  .cta-btn-nav {
+      background: var(--primary);
+      color: white !important;
+      padding: 0.5rem 1.2rem;
+      border-radius: 5px;
+  }
+
+  .menu-toggle {
+      display: none;
+      font-size: 1.5rem;
+      cursor: pointer;
+      color: var(--primary);
+  }
+
+  /* =========================================
+           4. FOOTER
+           ========================================= */
+  footer {
+      background: var(--dark);
+      color: white;
+      padding: 4rem 5% 2rem;
+  }
+
+  .footer-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+      gap: 3rem;
+      margin-bottom: 3rem;
+      text-align: left;
+  }
+
+  .footer-col h3,
+  .footer-col h4 {
+      color: var(--secondary);
+      margin-bottom: 1.5rem;
+  }
+
+  .footer-col p {
+      color: #cbd5e1;
+      line-height: 1.8;
+  }
+
+  .footer-links li {
+      margin-bottom: 0.8rem;
+  }
+
+  .footer-links a {
+      color: #cbd5e1;
+      transition: 0.3s;
+  }
+
+  .footer-links a:hover {
+      color: var(--secondary);
+      padding-left: 5px;
+  }
+
+  .footer-bottom {
+      border-top: 1px solid #333;
+      padding-top: 2rem;
+      text-align: center;
+      color: #94a3b8;
+  }
+
+  .social-links {
+      display: flex;
+      gap: 1rem;
+      margin-top: 1rem;
+  }
+
+  .social-links a {
+      color: white;
+      font-size: 1.5rem;
+      transition: 0.3s;
+  }
+
+  .social-links a:hover {
+      color: var(--secondary);
+  }
+
+  .whatsapp-float {
+      position: fixed;
+      bottom: 30px;
+      right: 30px;
+      background-color: #25d366;
+      color: white;
+      width: 60px;
+      height: 60px;
+      border-radius: 50%;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-size: 30px;
+      box-shadow: 2px 5px 15px rgba(0, 0, 0, 0.3);
+      z-index: 1000;
+      transition: 0.3s;
+  }
+
+  .whatsapp-float:hover {
+      transform: scale(1.1);
+  }
+
+  /* =========================================
+           5. FAQ PAGE SPECIFIC STYLES
+           ========================================= */
+
+  /* Hero Section */
+  .page-hero {
+      background: linear-gradient(135deg, rgba(0, 68, 204, 0.9), rgba(0, 51, 153, 0.85)),
+          url('https://images.unsplash.com/photo-1454165804606-c3d57bc86b40?ixlib=rb-4.0.3&auto=format&fit=crop&w=1470&q=80');
+      background-size: cover;
+      background-position: center;
+      background-attachment: fixed;
+      padding: 8rem 5%;
+      text-align: center;
+      color: white;
+  }
+
+  .page-hero h1 {
+      font-size: 3.5rem;
+      color: white;
+      margin-bottom: 1rem;
+      font-weight: 800;
+  }
+
+  .page-hero p {
+      color: rgba(255, 255, 255, 0.95);
+      max-width: 700px;
+      margin: 0 auto;
+      font-size: 1.3rem;
+  }
+
+  /* Filter Buttons */
+  .filter-container {
+      display: flex;
+      justify-content: center;
+      gap: 1rem;
+      flex-wrap: wrap;
+      margin-bottom: 3rem;
+  }
+
+  .filter-btn {
+      padding: 0.6rem 1.5rem;
+      border-radius: 50px;
+      border: 2px solid var(--grey-light);
+      background: var(--white);
+      color: var(--grey);
+      font-weight: 600;
+      cursor: pointer;
+      transition: all 0.3s ease;
+  }
+
+  .filter-btn:hover {
+      border-color: var(--primary);
+      color: var(--primary);
+  }
+
+  .filter-btn.active {
+      background: var(--primary);
+      color: var(--white);
+      border-color: var(--primary);
+  }
+
+  /* FAQ Grid */
+  .faq-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+      gap: 2rem;
+      max-width: 1200px;
+      margin: 0 auto;
+  }
+
+  .faq-item {
+      background: var(--white);
+      border-radius: 10px;
+      box-shadow: var(--shadow);
+      border: 1px solid var(--grey-light);
+      overflow: hidden;
+      transition: 0.3s;
+  }
+
+  .faq-item:hover {
+      box-shadow: var(--shadow-lg);
+      border-color: var(--primary);
+  }
+
+  .faq-question {
+      padding: 1.5rem;
+      cursor: pointer;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      font-weight: 600;
+      color: var(--dark);
+      background: var(--white);
+      transition: 0.3s;
+  }
+
+  .faq-question:hover {
+      color: var(--primary);
+      background: var(--light-bg);
+  }
+
+  .faq-question i {
+      transition: 0.3s;
+      color: var(--secondary);
+  }
+
+  .faq-item.active .faq-question i {
+      transform: rotate(180deg);
+  }
+
+  .faq-answer {
+      max-height: 0;
+      overflow: hidden;
+      transition: max-height 0.4s ease;
+      background: var(--light-bg);
+      padding: 0 1.5rem;
+      color: var(--grey);
+      font-size: 0.95rem;
+  }
+
+  .faq-item.active .faq-answer {
+      max-height: 300px;
+      /* Adjust based on content */
+      padding: 1.5rem;
+      border-top: 1px solid var(--grey-light);
+  }
+
+  .faq-category {
+      font-size: 0.75rem;
+      text-transform: uppercase;
+      letter-spacing: 1px;
+      color: var(--secondary);
+      font-weight: 700;
+      margin-bottom: 0.5rem;
+      display: block;
+  }
+
+  /* CTA Section */
+  .cta-section {
+      background: linear-gradient(135deg, var(--primary), var(--primary-dark));
+      color: white;
+      text-align: center;
+  }
+
+  .cta-section h2 {
+      color: white;
+  }
+
+  .cta-section p {
+      color: rgba(255, 255, 255, 0.9);
+  }
+
+  /* =========================================
+           6. ANIMATIONS
+           ========================================= */
+  .animate-on-scroll {
+      opacity: 0;
+      transform: translateY(40px);
+      transition: all 0.8s cubic-bezier(0.5, 0, 0, 1);
+  }
+
+  .animate-on-scroll.visible {
+      opacity: 1;
+      transform: translateY(0);
+  }
+
+  @keyframes fadeIn {
+      from {
+          opacity: 0;
+          transform: translateY(20px);
+      }
+
+      to {
+          opacity: 1;
+          transform: translateY(0);
+      }
+  }
+
+  .fade-in {
+      animation: fadeIn 1s ease forwards;
+  }
+
+  /* Hide items when filtering */
+  .faq-item.hidden {
+      display: none;
+  }
+
+  /* =========================================
+           7. RESPONSIVE MEDIA QUERIES
+           ========================================= */
+  @media (max-width: 768px) {
+      .menu-toggle {
+          display: block;
+      }
+
+      .nav-links {
+          display: none;
+          position: absolute;
+          top: 100%;
+          left: 0;
+          width: 100%;
+          background: var(--white);
+          flex-direction: column;
+          padding: 2rem;
+          box-shadow: var(--shadow);
+          gap: 1.5rem;
+          text-align: center;
+      }
+
+      .nav-links.active {
+          display: flex;
+      }
+
+      .page-hero h1 {
+          font-size: 2.5rem;
+      }
+
+      .page-hero p {
+          font-size: 1.1rem;
+      }
+
+      .faq-grid {
+          grid-template-columns: 1fr;
+      }
+
+      .filter-btn {
+          width: 100%;
+      }
+  }

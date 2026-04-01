@@ -1,0 +1,442 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tech Sheikh Computer Hub | Laptops, Training & Tech Solutions</title>
+
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700;800&display=swap" rel="stylesheet">
+
+    <!-- Font Awesome Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+
+    <!-- CSS -->
+    <link rel="stylesheet" href="./css/index.css">
+</head>
+
+<body>
+
+    <!-- NAVIGATION -->
+    <header>
+        <nav>
+            <div class="logo">TS Computer <span>Hub</span></div>
+            <div class="menu-toggle" id="mobile-menu-btn">
+                <i class="fas fa-bars"></i>
+            </div>
+            <ul class="nav-links" id="nav-links">
+                <li><a href="index.html" class="active">Home</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="product.html">Laptops</a></li>
+                <li><a href="courses.html">Academy</a></li>
+                <li><a href="services.html">IT Services</a></li>
+                <li><a href="faqs.html">FAQs</a></li>
+                <li><a href="blog.html">Blog</a></li>
+                <li><a href="./contact.html" class="cta-btn-nav">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <!-- HERO SLIDER -->
+    <section class="hero-slider" id="home">
+        <div class="slide active"
+            style="background-image:url('https://images.unsplash.com/photo-1517336714731-489689fd1ca8?auto=format&fit=crop&w=1200&q=80');">
+            <div class="overlay"></div>
+            <div class="slide-content">
+                <h1>Premium Laptops, Zero Regrets</h1>
+                <p>Genuine UK-used & new laptops with warranty. Stop buying fakes.</p>
+                <a href="product.html" class="btn btn-primary">Shop Laptops Now</a>
+            </div>
+        </div>
+
+        <div class="slide"
+            style="background-image:url('https://images.unsplash.com/photo-1522202176988-66273c2fd55f?auto=format&fit=crop&w=1200&q=80');">
+            <div class="overlay"></div>
+            <div class="slide-content">
+                <h1>Learn Tech Skills That Pay</h1>
+                <p>Web development, data analysis & design with expert mentors.</p>
+                <a href="courses.html" class="btn btn-secondary">Join The Academy</a>
+            </div>
+        </div>
+
+        <div class="slide"
+            style="background-image:url('https://images.unsplash.com/photo-1556761175-b413da4baf72?auto=format&fit=crop&w=1200&q=80');">
+            <div class="overlay"></div>
+            <div class="slide-content">
+                <h1>Business Solutions That Scale</h1>
+                <p>Websites, branding & IT support to grow your business online.</p>
+                <a href="services.html" class="btn btn-primary">View Our Services</a>
+            </div>
+        </div>
+
+        <div class="slide" style="background-image:url('./images/download\ \(3\).jfif');">
+            <div class="overlay"></div>
+            <div class="slide-content">
+                <h1>Education Consulting Made Easy</h1>
+                <p>We guide you to secure admission in top institutions easily.</p>
+                <a href="#contact" class="btn btn-secondary">Talk to an Expert</a>
+            </div>
+        </div>
+
+        <button class="slider-btn prev" id="prevBtn">&#10094;</button>
+        <button class="slider-btn next" id="nextBtn">&#10095;</button>
+
+        <div class="slider-dots">
+            <span class="dot active" data-slide="0"></span>
+            <span class="dot" data-slide="1"></span>
+            <span class="dot" data-slide="2"></span>
+            <span class="dot" data-slide="3"></span>
+        </div>
+    </section>
+
+    <!-- "WE MAKE TECHNOLOGY SIMPLE" SECTION -->
+    <section class="simple-tech-section">
+        <div class="simple-tech-content">
+            <h2>We Make Technology Simple</h2>
+            <p>
+                From buying your first laptop to building a career in tech, we remove the complexity and confusion.
+                <span class="highlight">No jargon, no scams, no stress.</span> Just practical solutions that help you
+                work, learn, and grow.
+            </p>
+            <div style="display: flex; justify-content: center; gap: 1rem; flex-wrap: wrap;">
+                <a href="about.html" class="btn btn-primary">Our Story</a>
+                <a href="#contact" class="btn btn-outline">Get In Touch</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- TRIPLE OFFER SECTION -->
+    <section class="features">
+        <h2>How We Solve Your Problems</h2>
+        <div class="features-grid">
+            <div class="feature-card">
+                <i class="fas fa-laptop feature-icon"></i>
+                <h3>Smart Buying</h3>
+                <p>Don't waste money on fake goods. We help you find laptops that fit your specific needs and budget.
+                </p>
+                <br>
+                <a href="product.html" class="btn btn-primary" style="width:100%">View Laptops</a>
+            </div>
+            <div class="feature-card">
+                <i class="fas fa-graduation-cap feature-icon"></i>
+                <h3>Skill Academy</h3>
+                <p>Stop guessing with YouTube tutorials. Learn practical, job-ready tech skills with our guided courses.
+                </p>
+                <br>
+                <a href="courses.html" class="btn btn-primary" style="width:100%">View Courses</a>
+            </div>
+            <div class="feature-card">
+                <i class="fas fa-tools feature-icon"></i>
+                <h3>Business Tech Solutions</h3>
+                <p>Poor online presence? Inefficient systems? We fix your tech infrastructure so you can grow.</p>
+                <br>
+                <a href="services.html" class="btn btn-primary" style="width:100%">Get a Quote</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- LAPTOP STORE -->
+    <section class="section-padding" id="laptop">
+        <div class="section-header">
+            <h2>Laptops That Won’t Disappoint You</h2>
+            <p>Tested, trusted, and ready to deliver. Grab yours before it’s gone!</p>
+        </div>
+
+        <div class="product-grid">
+            <div class="product-card">
+                <div class="product-badge">Student Pick</div>
+                <div class="product-img">
+                    <img src="https://images.unsplash.com/photo-1588872657578-7efd1f1555ed?ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=80"
+                        alt="HP Laptop">
+                </div>
+                <div class="product-info">
+                    <h3>HP Elitebook 840 G5</h3>
+                    <p class="product-specs">Intel Core i5 | 8GB RAM | 256GB SSD | Backlit Keyboard</p>
+                    <div class="product-price">₦320,000</div>
+                    <button class="btn btn-primary" style="width:100%;"
+                        onclick="orderProduct('HP Elitebook 840 G5', '320,000')">Grab This Deal Now</button>
+                </div>
+            </div>
+
+            <div class="product-card">
+                <div class="product-badge">Popular</div>
+                <div class="product-img">
+                    <img src="./images/laptop 1.jfif" alt="Dell Laptop">
+                </div>
+                <div class="product-info">
+                    <h3>Dell Latitude 7490</h3>
+                    <p class="product-specs">Intel Core i7 | 16GB RAM | 512GB SSD | 14-inch Screen</p>
+                    <div class="product-price">₦380,000</div>
+                    <button class="btn btn-primary" style="width:100%;"
+                        onclick="orderProduct('Dell Latitude 7490', '380,000')">Grab This Deal Now</button>
+                </div>
+            </div>
+
+            <div class="product-card">
+                <div class="product-badge">Premium</div>
+                <div class="product-img">
+                    <img src="https://images.unsplash.com/photo-1517336714731-489689fd1ca8?ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=80"
+                        alt="Macbook">
+                </div>
+                <div class="product-info">
+                    <h3>MacBook Air M1 (2020)</h3>
+                    <p class="product-specs">Apple M1 Chip | 8GB RAM | 256GB SSD | Space Gray</p>
+                    <div class="product-price">₦650,000</div>
+                    <button class="btn btn-primary" style="width:100%;"
+                        onclick="orderProduct('MacBook Air M1', '650,000')">Grab This Deal Now</button>
+                </div>
+            </div>
+        </div>
+
+        <div style="text-align:center;margin-top:3rem;">
+            <a href="product.html" class="btn btn-outline">Explore All Laptops →</a>
+        </div>
+    </section>
+
+    <!-- ACADEMY SECTION -->
+    <section class="section-padding academy-section" id="academy">
+        <div class="section-header">
+            <h2>The Tech Academy</h2>
+            <p>Don't waste time on random tutorials. Learn in-demand skills with hands-on guidance from real
+                professionals.</p>
+        </div>
+
+        <div class="course-grid">
+            <div class="course-card">
+                <div class="course-banner" style="background: #2d3748;"><i class="fas fa-code"></i></div>
+                <div class="course-info">
+                    <h3>Frontend Web Development</h3>
+                    <div class="course-meta">
+                        <span><i class="far fa-clock"></i> 12 Weeks</span>
+                        <span><i class="fas fa-signal"></i> Beginner</span>
+                    </div>
+                    <p style="color: var(--grey); margin-bottom: 1.5rem;">Learn HTML, CSS, JavaScript, and React to
+                        build modern websites from scratch.</p>
+                    <button class="btn btn-outline" style="width:100%;"
+                        onclick="enrollCourse('Frontend Web Development')">Enroll Now</button>
+                </div>
+            </div>
+
+            <div class="course-card">
+                <div class="course-banner" style="background: #1a365d;"><i class="fas fa-chart-pie"></i></div>
+                <div class="course-info">
+                    <h3>Data Analysis & Visualization</h3>
+                    <div class="course-meta">
+                        <span><i class="far fa-clock"></i> 8 Weeks</span>
+                        <span><i class="fas fa-signal"></i> Beginner</span>
+                    </div>
+                    <p style="color: var(--grey); margin-bottom: 1.5rem;">Master Excel, SQL, and PowerBI to help
+                        businesses make data-driven decisions.</p>
+                    <button class="btn btn-outline" style="width:100%;" onclick="enrollCourse('Data Analysis')">Enroll
+                        Now</button>
+                </div>
+            </div>
+
+            <div class="course-card">
+                <div class="course-banner" style="background: #c05621;"><i class="fas fa-paint-brush"></i></div>
+                <div class="course-info">
+                    <h3>UI/UX Graphic Design</h3>
+                    <div class="course-meta">
+                        <span><i class="far fa-clock"></i> 10 Weeks</span>
+                        <span><i class="fas fa-signal"></i> Beginner</span>
+                    </div>
+                    <p style="color: var(--grey); margin-bottom: 1.5rem;">Learn product design using Figma. Design
+                        beautiful apps, websites, and flyers.</p>
+                    <button class="btn btn-outline" style="width:100%;" onclick="enrollCourse('UI/UX Design')">Enroll
+                        Now</button>
+                </div>
+            </div>
+        </div>
+
+        <div style="text-align:center;margin-top:3rem;">
+            <a href="courses.html" class="btn btn-outline">Browse All Courses →</a>
+        </div>
+    </section>
+
+    <!-- SERVICES SECTION -->
+    <section class="section-padding" id="services">
+        <div class="section-header">
+            <h2>Business Digital Solutions</h2>
+            <p>We help businesses build credibility and automate systems to increase sales.</p>
+        </div>
+
+        <div class="services-grid">
+            <div class="service-card">
+                <i class="fas fa-globe service-icon"></i>
+                <h3>Web Development</h3>
+                <p style="color: var(--grey);">Corporate websites, E-commerce, and Landing pages tailored to your brand.
+                </p>
+            </div>
+            <div class="service-card">
+                <i class="fas fa-shield-alt service-icon"></i>
+                <h3>Computer Repair & IT</h3>
+                <p style="color: var(--grey);">Troubleshooting, hardware repairs, OS installations, and network setups.
+                </p>
+            </div>
+            <div class="service-card">
+                <i class="fas fa-bullhorn service-icon"></i>
+                <h3>Digital Branding</h3>
+                <p style="color: var(--grey);">Social media setup, SEO optimization, and branding assets to make you
+                    stand out.</p>
+            </div>
+        </div>
+
+        <div style="text-align:center;margin-top:3rem;">
+            <a href="services.html" class="btn btn-outline"> Explore Our Services →</a>
+        </div>
+    </section>
+
+    <!-- TESTIMONIALS -->
+    <section class="section-padding testimonials-section">
+        <div class="section-header">
+            <h2>What Our Clients Say</h2>
+            <p>Don't take our word for it, hear from the people we have helped.</p>
+        </div>
+
+        <div class="review-grid">
+            <div class="review-card">
+                <div class="stars"><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i
+                        class="fas fa-star"></i><i class="fas fa-star"></i></div>
+                <p style="font-style: italic;">"I bought my UK-used Dell laptop from Tech Sheikh. The battery life is
+                    amazing, and I didn't experience any issues. Great customer service!"</p>
+                <div class="reviewer">
+                    <div class="reviewer-avatar">AS</div>
+                    <div>
+                        <h4 style="color: var(--primary);">Abdullahi Sadaad</h4>
+                        <small style="color: var(--grey);">Web Development Student</small> <br>
+                        <small style="color: var(--grey);">A Computer Engineering Student from FUTMINNA</small>
+                    </div>
+                </div>
+            </div>
+
+            <div class="review-card">
+                <div class="stars"><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i
+                        class="fas fa-star"></i><i class="fas fa-star"></i></div>
+                <p style="font-style: italic;">"Tech Sheikh Computer Hub built our real estate company website. They are
+                    very
+                    professional and patient. Our online inquiries went up!"</p>
+                <div class="reviewer">
+                    <div class="reviewer-avatar">OT</div>
+                    <div>
+                        <h4 style="color: var(--primary);">Oyedeji Taiwo</h4>
+                        <small style="color: var(--grey);">Real Estate Manager</small>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- CONTACT SECTION -->
+    <section class="section-padding" id="contact">
+        <div class="section-header">
+            <h2>Have a Question?</h2>
+            <p>Inquiries about laptops, training, or projects? Drop a message.</p>
+        </div>
+
+        <div class="contact-container">
+            <!-- Left Side: Info -->
+            <div class="contact-info">
+                <h3>Visit Or Call Us</h3>
+                <div class="contact-item">
+                    <i class="fas fa-map-marker-alt"></i>
+                    <span>Shop 3, Beside College of Health Science,<br>Al-hikmah University, Ilorin, Kwara State,
+                        Nigeria</span>
+                </div>
+                <div class="contact-item">
+                    <i class="fas fa-phone-alt"></i>
+                    <span>+234 703 233 1829<br>+234 902 931 2126</span>
+                </div>
+                <div class="contact-item">
+                    <i class="fas fa-envelope"></i>
+                    <span>techsheikh001@gmail.com</span>
+                </div>
+                <div class="contact-item">
+                    <i class="fas fa-clock"></i>
+                    <span>Mon - Sat (9:00 AM - 6:30 PM)</span>
+                </div>
+            </div>
+
+            <!-- Right Side: Form -->
+            <div class="contact-form-wrapper">
+                <h3>Send Us A Message</h3>
+                <form id="contactForm">
+                    <div class="form-group">
+                        <input type="text" id="contactName" placeholder="Your Name" required>
+                    </div>
+                    <div class="form-group">
+                        <select id="contactService" required>
+                            <option value="">What do you need help with?</option>
+                            <option value="Buy Laptop">Buy Laptop</option>
+                            <option value="Join Academy">Learn Tech Skills</option>
+                            <option value="Business Service">Business Service</option>
+                            <option value="Other">Other Inquiry</option>
+                        </select>
+                    </div>
+                    <div class="form-group">
+                        <textarea id="contactMessage" rows="4" placeholder="Type your message here..."
+                            required></textarea>
+                    </div>
+                    <div class="form-actions">
+                        <button type="submit" class="btn btn-secondary">Send via WhatsApp</button>
+                        <button type="reset" class="btn btn-outline">Reset Form</button>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </section>
+
+    <!-- FOOTER -->
+    <footer class="site-footer">
+        <div class="footer-grid">
+
+            <div class="footer-col">
+                <h3>Tech Sheikh Computer Hub</h3>
+                <p>We make technology simple for everyone. From buying the right laptop to learning high income skills
+                    and growing your business.</p>
+                <div class="social-links">
+                    <a href="#"><i class="fab fa-facebook"></i></a>
+                    <a href="#"><i class="fab fa-instagram"></i></a>
+                    <a href="#"><i class="fab fa-twitter"></i></a>
+                </div>
+            </div>
+
+            <div class="footer-col">
+                <h4>Quick Links</h4>
+                <ul class="footer-links">
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="about.html">About Us</a></li>
+                    <li><a href="product.html">Shop Laptops</a></li>
+                    <li><a href="courses.html">Academy</a></li>
+                    <li><a href="services.html">IT Services</a></li>
+                </ul>
+            </div>
+
+            <div class="footer-col">
+                <h4>Contact & Location</h4>
+                <ul class="footer-links">
+                    <li><i class="fas fa-map-marker-alt"></i> Shop 3, Beside College of Health Science,<br>Al-hikmah
+                        University, Ilorin, Kwara State,
+                        Nigeria.</li>
+                    <li><i class="fas fa-phone"></i> +234 703 233 1829, +234 902 931 2126</li>
+                    <li><i class="fas fa-envelope"></i> techsheikh001@gmail.com</li>
+                </ul>
+            </div>
+
+        </div>
+
+        <div class="footer-bottom">
+            <p>&copy; <span id="year"></span> Tech Sheikh Computer Hub. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <!-- Floating WhatsApp -->
+    <a href="https://wa.me/2347032331829" class="whatsapp-float" target="_blank">
+        <i class="fab fa-whatsapp"></i>
+    </a>
+
+    <!-- SCRIPTS -->
+    <script src="./JavaScript/index.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,686 @@
+  /* =========================================
+ 1. GLOBAL DESIGN SYSTEM
+========================================= */
+  :root {
+      --primary: #0044CC;
+      --primary-dark: #003399;
+      --secondary: #FF9900;
+      --secondary-hover: #e68900;
+      --dark: #1a1a1a;
+      --light-bg: #f4f7f6;
+      --white: #ffffff;
+      --grey: #777;
+      --grey-light: #e2e8f0;
+      --shadow: 0 4px 15px rgba(0, 0, 0, 0.08);
+      --shadow-lg: 0 10px 30px rgba(0, 0, 0, 0.15);
+  }
+
+  * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+      font-family: 'Inter', sans-serif;
+      scroll-behavior: smooth;
+  }
+
+  body {
+      color: var(--dark);
+      background-color: var(--white);
+      line-height: 1.6;
+      overflow-x: hidden;
+  }
+
+  a {
+      text-decoration: none;
+      color: inherit;
+  }
+
+  ul {
+      list-style: none;
+  }
+
+  img {
+      max-width: 100%;
+      height: auto;
+      display: block;
+  }
+
+  .section-padding {
+      padding: 5rem 5%;
+  }
+
+  .section-header {
+      text-align: center;
+      margin-bottom: 3rem;
+  }
+
+  .section-header h2 {
+      font-size: 2.5rem;
+      color: var(--primary);
+      margin-bottom: 0.5rem;
+      font-weight: 800;
+  }
+
+  .section-header p {
+      color: var(--grey);
+      font-size: 1.1rem;
+      max-width: 700px;
+      margin: 0 auto;
+  }
+
+  .btn {
+      display: inline-block;
+      padding: 0.8rem 1.8rem;
+      border-radius: 5px;
+      font-weight: 700;
+      cursor: pointer;
+      transition: all 0.3s ease;
+      border: none;
+      text-align: center;
+  }
+
+  .btn-primary {
+      background: var(--primary);
+      color: var(--white);
+  }
+
+  .btn-primary:hover {
+      background: var(--primary-dark);
+      transform: translateY(-3px);
+      box-shadow: var(--shadow);
+  }
+
+  .btn-secondary {
+      background: var(--secondary);
+      color: var(--white);
+  }
+
+  .btn-secondary:hover {
+      background: var(--secondary-hover);
+      transform: translateY(-3px);
+      box-shadow: var(--shadow);
+  }
+
+  .btn-outline {
+      border: 2px solid var(--primary);
+      color: var(--primary);
+      background: transparent;
+  }
+
+  .btn-outline:hover {
+      background: var(--primary);
+      color: var(--white);
+      transform: translateY(-3px);
+  }
+
+  /* =========================================
+           2. TOP CONTACT BAR (NEW FEATURE)
+           ========================================= */
+
+  .top-contact-bar {
+      background: var(--primary-dark);
+      color: white;
+      padding: 0.8rem 5%;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      font-size: 0.95rem;
+      z-index: 1005;
+      /* Increased so it stays above your header */
+      position: sticky;
+      /* Changed from relative to sticky */
+      top: 0;
+      /* Pins it to the very top of the screen */
+  }
+
+  .contact-info-text {
+      display: flex;
+      align-items: center;
+      gap: 1rem;
+  }
+
+  .contact-info-text i {
+      color: var(--secondary);
+  }
+
+  .call-now-btn {
+      background: var(--secondary);
+      color: white;
+      padding: 0.4rem 1rem;
+      border-radius: 4px;
+      font-weight: 700;
+      font-size: 0.9rem;
+      transition: 0.3s;
+  }
+
+  .call-now-btn:hover {
+      background: white;
+      color: var(--secondary);
+  }
+
+
+
+  /* =========================================
+           3. HEADER & NAVIGATION
+           ========================================= */
+  header {
+      background: var(--white);
+      box-shadow: var(--shadow);
+      position: sticky;
+      top: 0;
+      z-index: 1001;
+      /* Below top bar */
+  }
+
+  nav {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding: 1rem 5%;
+  }
+
+  .logo {
+      font-size: 1.5rem;
+      font-weight: 800;
+      color: var(--primary);
+  }
+
+  .logo span {
+      color: var(--secondary);
+  }
+
+  .nav-links {
+      display: flex;
+      gap: 2rem;
+      align-items: center;
+  }
+
+  .nav-links a {
+      color: var(--dark);
+      font-weight: 600;
+      transition: 0.3s;
+  }
+
+  .nav-links a:hover,
+  .nav-links a.active {
+      color: var(--primary);
+  }
+
+  .cta-btn-nav {
+      background: var(--primary);
+      color: white !important;
+      padding: 0.5rem 1.2rem;
+      border-radius: 5px;
+  }
+
+  .menu-toggle {
+      display: none;
+      font-size: 1.5rem;
+      cursor: pointer;
+      color: var(--primary);
+  }
+
+  /* =========================================
+           4. HERO SECTION
+           ========================================= */
+  .page-hero {
+      background: linear-gradient(135deg, rgba(0, 68, 204, 0.95), rgba(0, 51, 153, 0.9)),
+          url('https://images.unsplash.com/photo-1553877522-43269d4ea984?ixlib=rb-4.0.3&auto=format&fit=crop&w=1470&q=80');
+      background-size: cover;
+      background-position: center;
+      background-attachment: fixed;
+      padding: 10rem 5%;
+      text-align: center;
+      color: white;
+      margin-top: 0;
+      /* Reset spacing if needed */
+  }
+
+  .page-hero h1 {
+      font-size: 3.5rem;
+      color: white;
+      margin-bottom: 1rem;
+      font-weight: 800;
+  }
+
+  .page-hero p {
+      color: rgba(255, 255, 255, 0.95);
+      max-width: 700px;
+      margin: 0 auto 2rem;
+      font-size: 1.3rem;
+  }
+
+  /* =========================================
+           5. TRUST BAR (WHY TRUST US)
+           ========================================= */
+  .trust-bar {
+      background: var(--secondary);
+      color: white;
+      padding: 1.5rem 5%;
+      display: flex;
+      justify-content: center;
+      gap: 3rem;
+      flex-wrap: wrap;
+      text-align: center;
+  }
+
+  .trust-item {
+      display: flex;
+      align-items: center;
+      gap: 0.5rem;
+      font-weight: 600;
+      font-size: 0.95rem;
+  }
+
+  .trust-item i {
+      color: var(--dark);
+  }
+
+  /* =========================================
+           6. SERVICE CARDS (CATEGORIZED)
+           ========================================= */
+  .service-card {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 4rem;
+      align-items: center;
+      margin-bottom: 5rem;
+      background: var(--white);
+      border-radius: 15px;
+      overflow: hidden;
+      box-shadow: var(--shadow);
+      border: 1px solid var(--grey-light);
+  }
+
+  .service-card:nth-child(even) {
+      direction: rtl;
+  }
+
+  .service-card:nth-child(even)>* {
+      direction: ltr;
+  }
+
+  .service-image {
+      height: 100%;
+      min-height: 350px;
+      background-size: cover;
+      background-position: center;
+  }
+
+  .service-content {
+      padding: 3rem;
+  }
+
+  .service-content h3 {
+      font-size: 2rem;
+      color: var(--primary);
+      margin-bottom: 1rem;
+  }
+
+  .service-tagline {
+      color: var(--secondary);
+      font-weight: 700;
+      font-size: 0.9rem;
+      text-transform: uppercase;
+      letter-spacing: 1px;
+      margin-bottom: 1.5rem;
+      display: block;
+  }
+
+  .service-content p {
+      color: var(--grey);
+      margin-bottom: 1.5rem;
+  }
+
+  /* The "How It Helps" Box */
+  .helps-box {
+      background: var(--light-bg);
+      padding: 1.5rem;
+      border-radius: 8px;
+      margin-bottom: 1.5rem;
+      border-left: 4px solid var(--secondary);
+  }
+
+  .helps-box h4 {
+      margin-bottom: 0.5rem;
+      font-size: 1rem;
+      color: var(--dark);
+  }
+
+  .helps-box ul {
+      list-style: disc;
+      padding-left: 1.5rem;
+      color: var(--grey);
+      font-size: 0.95rem;
+  }
+
+  .helps-box ul li {
+      margin-bottom: 0.3rem;
+  }
+
+  /* =========================================
+           7. HOW WE WORK SECTION (NEW)
+           ========================================= */
+  .how-we-work-section {
+      background: var(--light-bg);
+      padding: 5rem 5%;
+      margin-top: 4rem;
+      margin-bottom: 2rem;
+  }
+
+  .how-we-work-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+      gap: 2rem;
+      max-width: 1200px;
+      margin: 0 auto;
+  }
+
+  .work-step {
+      text-align: center;
+      background: var(--white);
+      padding: 2.5rem;
+      border-radius: 10px;
+      box-shadow: var(--shadow);
+      transition: 0.3s;
+      border-top: 4px solid var(--primary);
+  }
+
+  .work-step:hover {
+      transform: translateY(-5px);
+  }
+
+  .step-number {
+      width: 50px;
+      height: 50px;
+      background: var(--primary);
+      color: white;
+      border-radius: 50%;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-weight: 800;
+      font-size: 1.2rem;
+      margin: 0 auto 1.5rem;
+  }
+
+  .work-step h4 {
+      font-size: 1.3rem;
+      margin-bottom: 0.5rem;
+      color: var(--dark);
+  }
+
+  .work-step p {
+      font-size: 0.95rem;
+      color: var(--grey);
+  }
+
+  /* =========================================
+           8. WHY TRUST TECH SHEIKH HUB (EXISTING KEPT)
+           ========================================= */
+  .trust-section {
+      background: var(--light-bg);
+      padding: 5rem 5%;
+  }
+
+  .trust-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+      gap: 2rem;
+      max-width: 1200px;
+      margin: 0 auto;
+  }
+
+  .trust-card {
+      background: var(--white);
+      padding: 2.5rem;
+      border-radius: 10px;
+      box-shadow: var(--shadow);
+      text-align: center;
+      border-top: 5px solid var(--primary);
+  }
+
+  .trust-card i {
+      font-size: 3rem;
+      color: var(--secondary);
+      margin-bottom: 1.5rem;
+  }
+
+  .trust-card h4 {
+      font-size: 1.3rem;
+      margin-bottom: 1rem;
+      color: var(--dark);
+  }
+
+  .trust-card p {
+      color: var(--grey);
+      font-size: 0.95rem;
+  }
+
+  /* =========================================
+           9. TRUSTED BY BUSINESS SECTION (NEW ENHANCEMENT)
+           ========================================= */
+  .trusted-business-section {
+      padding: 5rem 5%;
+      background: var(--white);
+  }
+
+  .business-stats-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+      gap: 2rem;
+      max-width: 1000px;
+      margin: 0 auto 4rem;
+      text-align: center;
+  }
+
+  .stat-box h3 {
+      font-size: 2.5rem;
+      color: var(--primary);
+      margin-bottom: 0.5rem;
+  }
+
+  .stat-box p {
+      color: var(--secondary);
+      font-weight: 700;
+  }
+
+  .trusted-testimonials-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+      gap: 2rem;
+      max-width: 1000px;
+      margin: 0 auto;
+  }
+
+  .client-review-card {
+      background: var(--light-bg);
+      padding: 2rem;
+      border-radius: 10px;
+      border-left: 4px solid var(--secondary);
+  }
+
+  .stars {
+      color: var(--secondary);
+      margin-bottom: 1rem;
+  }
+
+  .client-name {
+      font-weight: 700;
+      color: var(--dark);
+      margin-top: 1rem;
+      display: block;
+  }
+
+  .client-role {
+      font-size: 0.85rem;
+      color: var(--grey);
+      margin-top: 0.2rem;
+      display: block;
+  }
+
+  /* =========================================
+           10. CTA SECTION
+           ========================================= */
+  .cta-section {
+      background: linear-gradient(135deg, var(--primary), var(--primary-dark));
+      color: white;
+      text-align: center;
+  }
+
+  .cta-section h2 {
+      color: white;
+  }
+
+  .cta-section p {
+      color: rgba(255, 255, 255, 0.9);
+      max-width: 600px;
+      margin: 0 auto 2rem;
+  }
+
+  /* =========================================
+           11. FOOTER
+           ========================================= */
+  footer {
+      background: var(--dark);
+      color: white;
+      padding: 4rem 5% 2rem;
+  }
+
+  .footer-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+      gap: 3rem;
+      margin-bottom: 3rem;
+      text-align: left;
+  }
+
+  .footer-col h3,
+  .footer-col h4 {
+      color: var(--secondary);
+      margin-bottom: 1.5rem;
+  }
+
+  .footer-col p {
+      color: #cbd5e1;
+      line-height: 1.8;
+  }
+
+  .footer-links li {
+      margin-bottom: 0.8rem;
+  }
+
+  .footer-links a {
+      color: #cbd5e1;
+      transition: 0.3s;
+  }
+
+  .footer-links a:hover {
+      color: var(--secondary);
+      padding-left: 5px;
+  }
+
+  .footer-bottom {
+      border-top: 1px solid #333;
+      padding-top: 2rem;
+      text-align: center;
+      color: #94a3b8;
+  }
+
+  .social-links {
+      display: flex;
+      gap: 1rem;
+      margin-top: 1rem;
+  }
+
+  .social-links a {
+      color: white;
+      font-size: 1.5rem;
+      transition: 0.3s;
+  }
+
+  .social-links a:hover {
+      color: var(--secondary);
+  }
+
+  .whatsapp-float {
+      position: fixed;
+      bottom: 30px;
+      right: 30px;
+      background-color: #25d366;
+      color: white;
+      width: 60px;
+      height: 60px;
+      border-radius: 50%;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-size: 30px;
+      box-shadow: 2px 5px 15px rgba(0, 0, 0, 0.3);
+      z-index: 1000;
+      transition: 0.3s;
+  }
+
+  .whatsapp-float:hover {
+      transform: scale(1.1);
+  }
+
+  /* =========================================
+           12. RESPONSIVE
+           ========================================= */
+  @media (max-width: 900px) {
+      .service-card {
+          grid-template-columns: 1fr;
+          gap: 0;
+      }
+
+      .service-card:nth-child(even) {
+          direction: ltr;
+      }
+
+      .service-image {
+          min-height: 250px;
+          order: -1;
+      }
+
+      .service-content {
+          padding: 2rem;
+      }
+  }
+
+  @media (max-width: 768px) {
+      .menu-toggle {
+          display: block;
+      }
+
+      .nav-links {
+          display: none;
+          position: absolute;
+          top: 100%;
+          left: 0;
+          width: 100%;
+          background: var(--white);
+          flex-direction: column;
+          padding: 2rem;
+          box-shadow: var(--shadow);
+          gap: 1.5rem;
+          text-align: center;
+      }
+
+      .nav-links.active {
+          display: flex;
+      }
+
+      .page-hero h1 {
+          font-size: 2.2rem;
+      }
+
+      .trust-bar {
+          gap: 1rem;
+      }
+
+      .top-contact-bar {
+          flex-direction: column;
+          gap: 1rem;
+      }
+  }
